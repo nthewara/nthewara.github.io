@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Azure</title>
+      <link>/categories/azure/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>/categories/microsoft/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/categories/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>/categories/virtualization/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/categories/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High Availability</title>
+      <link>/categories/high-availability/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/categories/high-availability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>/categories/sql/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/categories/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>/categories/storage/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/categories/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OMS</title>
+      <link>/categories/oms/</link>
+      <pubDate>Tue, 22 Nov 2016 18:13:40 +0000</pubDate>
+      
+      <guid>/categories/oms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Center</title>
+      <link>/categories/system-center/</link>
+      <pubDate>Wed, 12 Oct 2016 18:52:18 +0000</pubDate>
+      
+      <guid>/categories/system-center/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server</title>
+      <link>/categories/windows-server/</link>
+      <pubDate>Wed, 12 Oct 2016 18:52:18 +0000</pubDate>
+      
+      <guid>/categories/windows-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVP</title>
+      <link>/categories/mvp/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/categories/mvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>/categories/personal/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

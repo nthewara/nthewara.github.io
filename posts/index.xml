@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert existing Azure Virtual Machines to use Hybrid Use Benefit</title>
+      <link>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</guid>
+      <description>Hybrid Use Benefit (HUB) Allows customers with Software Assurance to use their on-premises Windows Server licenses to license Servers in Azure. With one Windows Server license, you can run two Windows Server Virtual Machines up to 8 Cores or a single Virtual Machine up to 16 Cores. This is a significant price reduction for customers who are using standard Windows Server image from Azure Marketplace (Up to around 40% cost saving).</description>
+    </item>
+    
+    <item>
+      <title>4TB Disk Support for Azure</title>
+      <link>/posts/2017-06-18-4tb-disk-support-for-azure/</link>
+      <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
+      
+      <guid>/posts/2017-06-18-4tb-disk-support-for-azure/</guid>
+      <description>&amp;lt;p&amp;gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR). &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.</description>
+    </item>
+    
+    <item>
+      <title>Azure Site Recovery Unified setup 9.7 &amp;#8211; Change input language to English</title>
+      <link>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</guid>
+      <description>In this blog post, I’m going to walkthrough and issue which I came across recently while setting up a lab environment for a customer. I downloaded latest ASR unified setup yesterday to build VMware (on-premises) to Azure (DR) scenario for a client. While running ASR Unified Setup, I came across below error, which was a bit strange for me as I had not seen that error before when running this setup(build a similar setup last month).</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2016 Failover Cluster Instances in Azure</title>
+      <link>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</guid>
+      <description>Microsoft recently announced additional support scenarios for using Guest Clusters in Azure. In this blog post, let’s have a look how we can build a two node SQL 2016 Guest clustering in Azure using Windows Server 2016 Storage Spaces Direct.
+Utilizing Guest clusters in Azure enables mission critical application such as a SQL backend to function with greater availability if a single instance fails. By using Failover clustering and also placing virtual machines in an availability set, ensure that the application can work regardless of a hardware failure / Host updates or an application instance failure.</description>
+    </item>
+    
+    <item>
+      <title>Single Instance VM SLA in Azure</title>
+      <link>/posts/2016-11-23-single-instance-vm-sla-in-azure/</link>
+      <pubDate>Wed, 23 Nov 2016 11:20:28 +0000</pubDate>
+      
+      <guid>/posts/2016-11-23-single-instance-vm-sla-in-azure/</guid>
+      <description>For many years one of the challenges we had with customers, is that Azure didn’t have an SLA for single instance VMs. The recommendation is always to have two VM instances added to an availability set, which will make sure that the customer are covered under Microsoft SLA for VM Update time which is 99.95%.
+A recent announcement from Microsoft states that they now support for Single Instance VM within Azure with an SLA of 99.</description>
+    </item>
+    
+    <item>
+      <title>Application Dependency Monitoring with OMS</title>
+      <link>/posts/2016-11-22-application-dependency-monitoring-with-oms/</link>
+      <pubDate>Tue, 22 Nov 2016 18:13:40 +0000</pubDate>
+      
+      <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
+      <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
+Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
+
+We can also see Windows Updates on each of the dependent servers</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 General Availability</title>
+      <link>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</link>
+      <pubDate>Wed, 12 Oct 2016 18:52:18 +0000</pubDate>
+      
+      <guid>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</guid>
+      <description>Microsoft released evaluation bits for Windows Server 2016 and System Center 2016 during Ignite Conference in Atlanta on 27thSeptember 2016. Having released evaluation bits, Microsoft made these two products generally available on 12thOctober, which added them to MSDN and also into Volume Licensing Service Center for Enterprise Customers.
+Evaluation media can be downloaded from links below
+Windows Server 2016: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016?i=1
+System Center 2016: https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-2016
+While there are many sessions at Ignite, which highlights capabilities presented within Windows Server 2016, feel free to have a look at some of the videos below as well.</description>
+    </item>
+    
+    <item>
+      <title>Awarded as a Microsoft MVP for 6th consecutive year</title>
+      <link>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</guid>
+      <description>2nd July I was re-awarded as a Microsoft MVP for 6th consecutive year. Over the years, it has been a great privilege being part of this Microsoft MVP community, to be able to share and also learn from others.
+This year, I’m part of the Cloud &amp;amp; Datacenter Management award category due to some of the recent changes in the MVP Program. Previously I was awarded for High Availability award category for my contributions relating to Windows Server / SQL Server High Availability and since OCT 2015, Microsoft made changes to bring Windows Server / System Center award categories together under Cloud &amp;amp; Datacenter Management.</description>
+    </item>
+    
+    <item>
+      <title>Windows Update using Azure Server Management Tools</title>
+      <link>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</guid>
+      <description>Microsoft recently updated Azure Server Management tools with a new functionality, which allows remote execution of Windows updates against managed Windows Server / Nano Server instances using Azure Server Management tools. For those who are not familiar Azure Server management tools, I wrote a blog post recently announcing Azure Server Management Tools, which is a new method for managing Windows Server 2016 Servers and also Nano Servers. (https://nirmalt.com/2016/02/26/azure-server-management-toolsinstallation/)
+Let’s have a look at the new patch management process using Server Management Tools.</description>
+    </item>
+    
+    <item>
+      <title>Import All Virtual Machines in a Folder using Powershell</title>
+      <link>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</guid>
+      <description>Hello Everyone
+Quick blog post to walkthrough a script that I used during my Windows Server Technical Preview 5 Lab refresh. I used below script to search through a folder and look for all the virtual machines, and then get them imported in to Hyper-V. Credit should go to Ben who blogged about this few years back but the script was specific for Windows Server 2012 R2 which uses XML for VM configuration.</description>
+    </item>
+    
+    <item>
+      <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
+      <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</guid>
+      <description>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+    <item>
+      <title>Now Available! Windows Server and System Center 2016 Technical Preview 5!</title>
+      <link>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</link>
+      <pubDate>Fri, 29 Apr 2016 09:07:18 +0000</pubDate>
+      
+      <guid>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</guid>
+      <description>Microsoft has released Technical Preview 5 for Windows Server 2016 and System Center 2016. This release is the last release before moving in to General Availability later this year. Microsoft made number of improvements within this Technical Preview 5 for both Windows Server &amp;amp; System Center products. To find out more on what’s improved / add please have a look at below resources
+What’s New in Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+    <item>
+      <title>Why Nano Server</title>
+      <link>/posts/2016-04-12-why-nano-server/</link>
+      <pubDate>Tue, 12 Apr 2016 10:26:35 +0000</pubDate>
+      
+      <guid>/posts/2016-04-12-why-nano-server/</guid>
+      <description>A common question that gets raised around new Windows Server 2016 Technical Preview is around Why we should deploy Nano Server and what’s the benefit. In this blog post I will discuss few benefits when using Nano Server deployment Method.
+Starting with Windows Server 2012, we had 3 deployment options
+ Server Core Deployment Option MinShell Deployment Option Full Desktop Experience Deployment Option  Back then, for deployments such as Hyper-V it was recommended to deploy Server Core due to limited attack surface and reduced patches/hotfixes which we had to deploy.</description>
+    </item>
+    
+    <item>
+      <title>Azure Server Management Tools–Installation</title>
+      <link>/posts/2016-02-26-azure-server-management-toolsinstallation/</link>
+      <pubDate>Fri, 26 Feb 2016 16:54:07 +0000</pubDate>
+      
+      <guid>/posts/2016-02-26-azure-server-management-toolsinstallation/</guid>
+      <description>In my previous post, I provided an Introduction to Azure Server Management Tools. In this blog post we will look at installing &amp;amp; configuration Server Management Tools.
+First Step involved in setting up Server Management Tools is for us to create a Server Management Tools Connection. Once a connection has been created, we can go ahead and provision Server Management Tools gateway. Gateway is an essential component which provides Azure Server Management Tools service, connectivity in to your on-premises or azure hosted Server 2016 VMs (At the moment support is only for Windows Server 2016 Technical Preview).</description>
+    </item>
+    
+    <item>
+      <title>Azure Server Management Tools (Preview)–Introduction</title>
+      <link>/posts/2016-02-12-azure-server-management-tools-previewintroduction/</link>
+      <pubDate>Fri, 12 Feb 2016 13:44:00 +0000</pubDate>
+      
+      <guid>/posts/2016-02-12-azure-server-management-tools-previewintroduction/</guid>
+      <description>Microsoft recently released Azure Server Management Tools preview for web-based management tools for Windows Server 2016 Technical Preview running on-premises as well as in Azure.
+Currently, Server Management Tools offer the following capabilities:
+ View and change system configuration View performance across various resources and manage processes and services Manage devices attached to the server View event logs View the list of installed roles and features Use a PowerShell console to manage and automate  Having server management tools available in Azure gives me the flexibility to manage my on-premises Windows Server 2016 servers and also Azure Windows Server 2016 Servers using a single portal.</description>
+    </item>
+    
+  </channel>
+</rss>

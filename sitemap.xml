@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/azure/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azure-iaas/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azure-licensing/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hub/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hybrid-use-benefit/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/microsoft/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software-assurance/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/virtual-machine/</loc>
+    <lastmod>2017-06-21T22:40:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/4tb/</loc>
+    <lastmod>2017-06-18T01:51:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-06-18-4tb-disk-support-for-azure/</loc>
+    <lastmod>2017-06-18T01:51:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azure-disk/</loc>
+    <lastmod>2017-06-18T01:51:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/extendeddisk/</loc>
+    <lastmod>2017-06-18T01:51:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/managed-disks/</loc>
+    <lastmod>2017-06-18T01:51:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/9.7/</loc>
+    <lastmod>2017-03-21T08:48:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/asr/</loc>
+    <lastmod>2017-03-21T08:48:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/asr-unified-setup/</loc>
+    <lastmod>2017-03-21T08:48:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</loc>
+    <lastmod>2017-03-21T08:48:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/virtualization/</loc>
+    <lastmod>2017-03-21T08:48:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/high-availability/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/s2d/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/sql/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sql-fci/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/storage/</loc>
+    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azure-vm/</loc>
+    <lastmod>2016-11-23T11:20:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-11-23-single-instance-vm-sla-in-azure/</loc>
+    <lastmod>2016-11-23T11:20:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sla/</loc>
+    <lastmod>2016-11-23T11:20:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/app/</loc>
+    <lastmod>2016-11-22T18:13:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-11-22-application-dependency-monitoring-with-oms/</loc>
+    <lastmod>2016-11-22T18:13:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/msoms/</loc>
+    <lastmod>2016-11-22T18:13:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/oms/</loc>
+    <lastmod>2016-11-22T18:13:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/system-center/</loc>
+    <lastmod>2016-10-12T18:52:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/windows-server/</loc>
+    <lastmod>2016-10-12T18:52:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</loc>
+    <lastmod>2016-10-12T18:52:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/award/</loc>
+    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</loc>
+    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cloudampdatacenter/</loc>
+    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/mvp/</loc>
+    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/personal/</loc>
+    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/management/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/servermanagement/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tp5/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windowsserver/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windowsserver2016/</loc>
+    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hyper-v/</loc>
+    <lastmod>2016-05-02T20:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/import/</loc>
+    <lastmod>2016-05-02T20:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</loc>
+    <lastmod>2016-05-02T20:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powershell/</loc>
+    <lastmod>2016-05-02T20:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</loc>
+    <lastmod>2016-05-01T14:52:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/storagespaces/</loc>
+    <lastmod>2016-05-01T14:52:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/storagespacesdirect/</loc>
+    <lastmod>2016-05-01T14:52:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</loc>
+    <lastmod>2016-04-29T09:07:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nano/</loc>
+    <lastmod>2016-04-12T10:26:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nano-server/</loc>
+    <lastmod>2016-04-12T10:26:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nanoserver/</loc>
+    <lastmod>2016-04-12T10:26:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-04-12-why-nano-server/</loc>
+    <lastmod>2016-04-12T10:26:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-02-26-azure-server-management-toolsinstallation/</loc>
+    <lastmod>2016-02-26T16:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azureservermanagementws2016windowsserver/</loc>
+    <lastmod>2016-02-26T16:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-02-12-azure-server-management-tools-previewintroduction/</loc>
+    <lastmod>2016-02-12T13:44:00+00:00</lastmod>
+  </url>
+  
+</urlset>

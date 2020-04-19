@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Convert existing Azure Virtual Machines to use Hybrid Use Benefit - CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Convert existing Azure Virtual Machines to use Hybrid Use Benefit" />
+<meta property="og:description" content="Hybrid Use Benefit (HUB) Allows customers with Software Assurance to use their on-premises Windows Server licenses to license Servers in Azure. With one Windows Server license, you can run two Windows Server Virtual Machines up to 8 Cores or a single Virtual Machine up to 16 Cores. This is a significant price reduction for customers who are using standard Windows Server image from Azure Marketplace (Up to around 40% cost saving)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/" />
+<meta property="article:published_time" content="2017-06-21T22:40:30+00:00" />
+<meta property="article:modified_time" content="2017-06-21T22:40:30+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Convert existing Azure Virtual Machines to use Hybrid Use Benefit"/>
+<meta name="twitter:description" content="Hybrid Use Benefit (HUB) Allows customers with Software Assurance to use their on-premises Windows Server licenses to license Servers in Azure. With one Windows Server license, you can run two Windows Server Virtual Machines up to 8 Cores or a single Virtual Machine up to 16 Cores. This is a significant price reduction for customers who are using standard Windows Server image from Azure Marketplace (Up to around 40% cost saving)."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG" rel="home">
+				<div class="logo__title">CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</div>
+				<div class="logo__tagline">This blog is about Public, Private, Hybrid Cloud Management &amp; Enterprise Device Management</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Convert existing Azure Virtual Machines to use Hybrid Use Benefit</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-06-21T22:40:30Z">21-06-2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/azure/" rel="category">Azure</a>, <a class="meta__link" href="/categories/microsoft/" rel="category">Microsoft</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>Hybrid Use Benefit (HUB) Allows customers with Software Assurance to use their on-premises Windows Server licenses to license Servers in Azure. With one Windows Server license, you can run two Windows Server Virtual Machines up to 8 Cores or a single Virtual Machine up to 16 Cores. This is a significant price reduction for customers who are using standard Windows Server image from Azure Marketplace (Up to around 40% cost saving). Windows Server Datacentre edition allows simultaneous usage both on-premises and in Azure whereas the standard can only be used either on-premises or in Azure.</p>
+<p>Microsoft has an online calculator which can help customer calculate their potential saving if they use Hybrid Use Benefit (<a href="https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/?v=17.220)">https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/?v=17.220)</a>.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis1.png" alt=""></p>
+<p>When we create new Virtual Machines, using Portal / PowerShell or using an ARM template we can specify to use HUB template images. Initially, this was only available via PowerShell and ARM templates, but it is now available for deployment using the Azure Portal as well.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis2.png" alt=""></p>
+<p><!-- raw HTML omitted --></p>
+<p>Recently I had a customer who had used Marketplace images (Windows Server Datacentre template instead of HUB) and wanted to look at whether it’s possible to convert existing virtual machines into HUB activate images. While doing a bit of research, there’s no straightforward method to convert existing Virtual Machines into HUB activated Virtual machines. Only method available at the moment is to delete the virtual machine and re-create using existing resources with a license switch set on the Virtual machine.</p>
+<p>Below is a virtual machine created using standard Windows Server datacenter template.</p>
+<p>Below is the output from Resource Explorer on a standard Windows Server virtual machine without having enabled Hybrid use benefit.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis4.png" alt=""></p>
+<p>Next step for us is to delete the VM but before deleting the virtual machine. Before we do this, let’s export the automation template from the Azure portal which we will use and modify accordingly to apply HUB when re-creating the virtual machine.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis5.png" alt=""></p>
+<p>Delete the VM</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis6.png" alt=""></p>
+<p>Next step is to verify and confirm Virtual Machine object is deleted but all other resources are available.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis7.png" alt=""></p>
+<p>Next I will use the automation template which we extracted earlier and re-deploy this Virtual machine from Azure portal. Let’s first make some modifications to the template</p>
+<p>Add “LicenseType” : “Windows_Server”</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis8.png" alt=""></p>
+<p>Remove Image reference</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis9.png" alt=""></p>
+<p>Remove OS profile</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis10.png" alt=""></p>
+<p>Modify OS Disk create option to attach</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis11.png" alt=""></p>
+<p>Next step is for us to deploy this template against the same resource group.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis12.png" alt=""></p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis13.png" alt=""></p>
+<p>You will notice that the deployment will skip disk/network and storage diagnostic resources and provision the Virtual machine using existing resources available.</p>
+<p>Having a look at the Resource Explorer, we can see that the license type is now set for this virtual machine.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis14.png" alt=""></p>
+<p>After logging into the virtual machine, I can use slmgr /dlv to check the license activation status. NTTST9111 virtual machine is activated against Microsoft KMS Server.</p>
+<p><img src="../wp-content/uploads/2017/06/062117_1430_convertexis15.png" alt=""></p>
+<p>Since we have set the license option in the template, this Virtual Machine will now use Hybrid Use benefit, and you won’t get charged for the operating system.</p>
+<p>Have a look at some of the resource below for more information relating to Hybrid Use Benefit</p>
+<p>[youtube https://www.youtube.com/watch?v=kxRo85G6yKc]</p>
+<p>References</p>
+<p><a href="https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/faq/">https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/faq/</a></p>
+<p><a href="https://blogs.msdn.microsoft.com/azureedu/2016/04/13/how-can-i-use-the-hybrid-use-benefit-in-azure/">https://blogs.msdn.microsoft.com/azureedu/2016/04/13/how-can-i-use-the-hybrid-use-benefit-in-azure/</a></p>
+<p><a href="https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/?v=17.22">https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/?v=17.22</a></p>
+<p><a href="https://azure.microsoft.com/en-us/resources/videos/azure-hybrid-use-benefit/">https://azure.microsoft.com/en-us/resources/videos/azure-hybrid-use-benefit/</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/azure-iaas/" rel="tag">Azure IaaS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/azure-licensing/" rel="tag">Azure licensing</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hub/" rel="tag">HUB</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hybrid-use-benefit/" rel="tag">Hybrid Use Benefit</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/software-assurance/" rel="tag">software assurance</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/virtual-machine/" rel="tag">Virtual machine</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+	</div>
+	<div class="authorbox__description">
+		Microsoft Cloud Solution Architect
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/2017-06-18-4tb-disk-support-for-azure/" rel="prev">
+			<span class="post-nav__caption">«&thinsp;Previous</span>
+			<p class="post-nav__post-title">4TB Disk Support for Azure</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Nirmal Thewarathanthri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

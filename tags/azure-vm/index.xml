@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure VM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/azure-vm/</link>
+    <description>Recent content in Azure VM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Nov 2016 11:20:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/azure-vm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Single Instance VM SLA in Azure</title>
+      <link>/posts/2016-11-23-single-instance-vm-sla-in-azure/</link>
+      <pubDate>Wed, 23 Nov 2016 11:20:28 +0000</pubDate>
+      
+      <guid>/posts/2016-11-23-single-instance-vm-sla-in-azure/</guid>
+      <description>For many years one of the challenges we had with customers, is that Azure didn’t have an SLA for single instance VMs. The recommendation is always to have two VM instances added to an availability set, which will make sure that the customer are covered under Microsoft SLA for VM Update time which is 99.95%.
+A recent announcement from Microsoft states that they now support for Single Instance VM within Azure with an SLA of 99.</description>
+    </item>
+    
+  </channel>
+</rss>

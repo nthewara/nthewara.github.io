@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/personal/</link>
+    <description>Recent content in Personal on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jul 2016 08:59:58 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Awarded as a Microsoft MVP for 6th consecutive year</title>
+      <link>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</guid>
+      <description>2nd July I was re-awarded as a Microsoft MVP for 6th consecutive year. Over the years, it has been a great privilege being part of this Microsoft MVP community, to be able to share and also learn from others.
+This year, I’m part of the Cloud &amp;amp; Datacenter Management award category due to some of the recent changes in the MVP Program. Previously I was awarded for High Availability award category for my contributions relating to Windows Server / SQL Server High Availability and since OCT 2015, Microsoft made changes to bring Windows Server / System Center award categories together under Cloud &amp;amp; Datacenter Management.</description>
+    </item>
+    
+    <item>
+      <title>Now Available! Windows Server and System Center 2016 Technical Preview 5!</title>
+      <link>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</link>
+      <pubDate>Fri, 29 Apr 2016 09:07:18 +0000</pubDate>
+      
+      <guid>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</guid>
+      <description>Microsoft has released Technical Preview 5 for Windows Server 2016 and System Center 2016. This release is the last release before moving in to General Availability later this year. Microsoft made number of improvements within this Technical Preview 5 for both Windows Server &amp;amp; System Center products. To find out more on what’s improved / add please have a look at below resources
+What’s New in Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+  </channel>
+</rss>

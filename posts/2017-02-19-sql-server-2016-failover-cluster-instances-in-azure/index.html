@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SQL Server 2016 Failover Cluster Instances in Azure - CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="SQL Server 2016 Failover Cluster Instances in Azure" />
+<meta property="og:description" content="Microsoft recently announced additional support scenarios for using Guest Clusters in Azure. In this blog post, let’s have a look how we can build a two node SQL 2016 Guest clustering in Azure using Windows Server 2016 Storage Spaces Direct.
+Utilizing Guest clusters in Azure enables mission critical application such as a SQL backend to function with greater availability if a single instance fails. By using Failover clustering and also placing virtual machines in an availability set, ensure that the application can work regardless of a hardware failure / Host updates or an application instance failure." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/" />
+<meta property="article:published_time" content="2017-02-19T22:11:32+00:00" />
+<meta property="article:modified_time" content="2017-02-19T22:11:32+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SQL Server 2016 Failover Cluster Instances in Azure"/>
+<meta name="twitter:description" content="Microsoft recently announced additional support scenarios for using Guest Clusters in Azure. In this blog post, let’s have a look how we can build a two node SQL 2016 Guest clustering in Azure using Windows Server 2016 Storage Spaces Direct.
+Utilizing Guest clusters in Azure enables mission critical application such as a SQL backend to function with greater availability if a single instance fails. By using Failover clustering and also placing virtual machines in an availability set, ensure that the application can work regardless of a hardware failure / Host updates or an application instance failure."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG" rel="home">
+				<div class="logo__title">CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</div>
+				<div class="logo__tagline">This blog is about Public, Private, Hybrid Cloud Management &amp; Enterprise Device Management</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">SQL Server 2016 Failover Cluster Instances in Azure</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-02-19T22:11:32Z">19-02-2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/azure/" rel="category">Azure</a>, <a class="meta__link" href="/categories/high-availability/" rel="category">High Availability</a>, <a class="meta__link" href="/categories/sql/" rel="category">SQL</a>, <a class="meta__link" href="/categories/storage/" rel="category">Storage</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>Microsoft recently announced additional support scenarios for using Guest Clusters in Azure. In this blog post, let’s have a look how we can build a two node SQL 2016 Guest clustering in Azure using Windows Server 2016 Storage Spaces Direct.</p>
+<p>Utilizing Guest clusters in Azure enables mission critical application such as a SQL backend to function with greater availability if a single instance fails. By using Failover clustering and also placing virtual machines in an availability set, ensure that the application can work regardless of a hardware failure / Host updates or an application instance failure.</p>
+<p>At the moment, following scenarios are supported in Azure using Failover Clustering</p>
+<ul>
+<li>SQL AlwaysOn Availability Groups</li>
+<li>SQL Server Failover Cluster Instances (detailed in this post)</li>
+<li>Scale-out File Server for hosting User Profile Disks when using Remote Desktop Services</li>
+</ul>
+<p>In this blog post, we will be looking at SQL Server 2016 Failover Cluster Instance deployment in Azure utilizing resource manager deployment templates available on Github.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Deployment Architecture<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0021.jpg"><!-- raw HTML omitted --></a></p>
+<p>Template Link = <a href="https://aka.ms/azure-sql-server-alwayson-fci-cluster">https://aka.ms/azure-sql-server-alwayson-fci-cluster</a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Requirements<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>Virtual machines are built using Windows Server 2016 and SQL Server 2016 images</li>
+<li>Requires existing VNET and also a Domain Controller</li>
+<li>Service Accounts to be provisioned, which will be later used by the Resource Manager deployment template</li>
+<li>Selected virtual machine size must support the number of data disks specified in the deployment template (Example standard_DS3_v2 only supports maximum up to 8 disks).</li>
+<li>Template creates Premium Storage Account for SQL virtual machines &amp; a standard storage account for Cloud Witness.</li>
+<li>Virtual Machines are placed into a single availability set.</li>
+</ul>
+<p> </p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Step by Step deployment for SQL 2016 Failover Cluster in Azure using Azure Resource Manager Template<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><strong>Step 01 –</strong> Use template link below and open it up in a browser</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0041.png"><!-- raw HTML omitted --></a></p>
+<p><strong>Step 02 –</strong> click on “Deploy to Azure” which will load this template into a custom template deployment within azure</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0061.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0081.png"><!-- raw HTML omitted --></a></p>
+<p><strong>Step 03 –</strong> Fill in required parameters and hit deploy.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Basic Section<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>Select the subscription in which you want to deploy</li>
+<li>Create a new resource group (which will help isolate resources relating to this deployment)</li>
+<li>Location – select your preferred location where you have a VNET created with connectivity to a domain controller.</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Settings Section<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>Name Prefix = provide a name between 3 charters and up to 8 characters. Provide a name prefix in lowercase otherwise, storage account creation will fail.</li>
+<li>Storage Account Type = Premium_LRS should be selected</li>
+<li>VM Size = depending on the workload, you could select the VM Size. Based on the selected VM Size, and the number of disks selected, data disks will get created during the deployment.</li>
+<li>VM Disk Size = 1023 (Maximum supported per disk in azure at the moment).</li>
+<li>VM Disk Count = 2 (depending on the chose VM, you could go up to 32 Disks)</li>
+<li>Existing Domain Name = domain name of your active directory environment (example contoso.local)</li>
+<li>Admin Username = administrative account in your active directory environment</li>
+<li>Admin Password = password</li>
+<li>Svc Username = SQL Administrator account name. must be a domain account</li>
+<li>Svc Password = password</li>
+<li>Existing Virtual Network Resource Group Name = Resource group name for existing VNET (example – NT-AUE-VNET-RG)</li>
+<li>Existing Virtual Network Name = Virtual Network Name (example NT-AUE-VNET)</li>
+<li>Existing Subnet Name = Subnet Name within your given VNET (Example Front-End)</li>
+<li>Cluster IP = Free IP Address which is not used or allocated</li>
+<li>_artifacts location = leave default – not required to be modified</li>
+<li>_artifacts location SaS Token = leave default – not required to be modified</li>
+</ul>
+<p><strong>Step 04 –</strong> Accept custom template, terms and conditions and select “I Agree to the terms &amp; conditions after reading through”. Next click on Purchase, which will initiate the deployment process.</p>
+<p><strong>Step 05 –</strong> click notifications and select the deployment to check the progress of the build.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0091.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0111.png"><!-- raw HTML omitted --></a></p>
+<p>Clicking on the resource “DeploySFCICluster”, you will be able to see individual component status</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0131.png"><!-- raw HTML omitted --></a></p>
+<p>Deployment should take around 45 – 1 hour to complete.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0151.png"><!-- raw HTML omitted --></a></p>
+<p>once completed, you will see completed notification as below.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0161.png"><!-- raw HTML omitted --></a></p>
+<p><strong>Step 06 –</strong> get local IP address of the VM and connect using remote desktop</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0171.png"><!-- raw HTML omitted --></a></p>
+<p><strong>Step 07 –</strong> Open Failover Cluster Manager (Start menu -&gt; Windows Administrative Tools -&gt; Failover Cluster Manager). Looking at the screenshot below, we can validate that the cluster was successfully created.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0191.png"><!-- raw HTML omitted --></a></p>
+<p>Next, we will go ahead and validate cluster roles to make sure that the SQL failover cluster installation is a success.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0211.png"><!-- raw HTML omitted --></a></p>
+<p>Next, we can navigate to Storage section within Failover Cluster Manager and verify Storage Spaces Direct configuration.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0231.png"><!-- raw HTML omitted --></a></p>
+<p>Storage Pool Summary</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0251.png"><!-- raw HTML omitted --></a></p>
+<p>Physical Disks</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0271.png"><!-- raw HTML omitted --></a></p>
+<p>Cluster summary</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0291.png"><!-- raw HTML omitted --></a></p>
+<p><strong>Step 08 –</strong> Open Microsoft SQL Server Management Studio (Star Menu -&gt; Microsoft SQL Server 2016 -&gt; Microsoft SQL Server Management Studio).</p>
+<p>Login to SQL Failover Cluster Name</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0301.png"><!-- raw HTML omitted --></a></p>
+<p>After you confirm that you can log in – create a sample database. Failover SQL resources to confirm that the services can failover to the other available node.</p>
+<p>Select SQL Server Role and right click -&gt; Move -&gt; Select Node</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0311.png"><!-- raw HTML omitted --></a></p>
+<p>Select the other available instance</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0321.png"><!-- raw HTML omitted --></a></p>
+<p>And click “OK”. After few seconds, services should start on the failover instance.</p>
+<p><a href="../wp-content/uploads/2017/02/clip_image0341.png"><!-- raw HTML omitted --></a></p>
+<p>This blog post details, how to create a SQL Server 2016 Failover Cluster Instance in Azure using Windows Server 2016 Storage Spaces Direct. Please have a look at reference links below for more information. Any queries, please feel free to comment below or reach out to me via twitter (@nirmalmt)</p>
+<p><!-- raw HTML omitted --><a href="https://blogs.msdn.microsoft.com/clustering/2017/02/14/deploying-an-iaas-vm-guest-clusters-in-microsoft-azure">https://blogs.msdn.microsoft.com/clustering/2017/02/14/deploying-an-iaas-vm-guest-clusters-in-microsoft-azure</a><!-- raw HTML omitted --></p>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster#step-2-configure-the-windows-server-failover-cluster-wsfc-with-s2d">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster#step-2-configure-the-windows-server-failover-cluster-wsfc-with-s2d</a></p>
+<p><!-- raw HTML omitted --><a href="https://support.microsoft.com/en-us/help/3200896/sql-server-availability-solutions-for-microsoft-identity-manager-services-databases">https://support.microsoft.com/en-us/help/3200896/sql-server-availability-solutions-for-microsoft-identity-manager-services-databases</a><!-- raw HTML omitted --></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/s2d/" rel="tag">S2D</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/sql-fci/" rel="tag">SQL FCI</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+	</div>
+	<div class="authorbox__description">
+		Microsoft Cloud Solution Architect
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/2016-11-23-single-instance-vm-sla-in-azure/" rel="prev">
+			<span class="post-nav__caption">«&thinsp;Previous</span>
+			<p class="post-nav__post-title">Single Instance VM SLA in Azure</p>
+		</a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/" rel="next">
+			<span class="post-nav__caption">Next&thinsp;»</span>
+			<p class="post-nav__post-title">Azure Site Recovery Unified setup 9.7 &amp;#8211; Change input language to English</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Nirmal Thewarathanthri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

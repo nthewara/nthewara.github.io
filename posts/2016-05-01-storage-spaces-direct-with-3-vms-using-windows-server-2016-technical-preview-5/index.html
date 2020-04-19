@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5 - CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5" />
+<meta property="og:description" content="In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/" />
+<meta property="article:published_time" content="2016-05-01T14:52:27+00:00" />
+<meta property="article:modified_time" content="2016-05-01T14:52:27+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5"/>
+<meta name="twitter:description" content="In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG" rel="home">
+				<div class="logo__title">CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</div>
+				<div class="logo__tagline">This blog is about Public, Private, Hybrid Cloud Management &amp; Enterprise Device Management</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-01T14:52:27Z">01-05-2016</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/high-availability/" rel="category">High Availability</a>, <a class="meta__link" href="/categories/microsoft/" rel="category">Microsoft</a>, <a class="meta__link" href="/categories/storage/" rel="category">Storage</a>, <a class="meta__link" href="/categories/windows-server/" rel="category">Windows Server</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.</p>
+<p>Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</p>
+<p>– Automatic Configuration</p>
+<p>– Storage Spaces Direct Management Using Virtual Machine Manager</p>
+<p>– Chassis and Rack Fault Tolerance</p>
+<p>– Deployment with 3 Servers</p>
+<p>– Deployments with NVMe,SSD and HDD</p>
+<p>Overview of Storage Spaces Direct</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image001.png"><!-- raw HTML omitted --></a></p>
+<p>Storage Spaces Direct enables building highly available and scalable storage systems using local storage. We can utilize storage locally attached to individual nodes such as HDD, SSD and NVMe drives for creating Storage Spaces Direct volumes.</p>
+<p>There are two deployment scenarios with Storage Spaces Direct. Hyper-Converged scenarios and disaggregated scenario. In this post, I will be demonstrating Hyper-Converged scenario.</p>
+<p>In this blog post let’s look at how we can create, Storage Spaces Direct with 3 Virtual Machines with mirrored resiliency. This deployment is resilient for a single node failure.</p>
+<p><!-- raw HTML omitted -->Step 01 – Create 3 Virtual Machines with 2 Networks and 3 Hard Drives (1 for OS and the other two for Storage Spaces Direct). Add all 3 Virtual Machines to a domain.<!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image003.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image005.png"><!-- raw HTML omitted --></a></p>
+<p>Step 02- is for us to go and install Failover Clustering features and File Services. You can do so by using PowerShell command below.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Install-WindowsFeature –Name File-Services, Failover-Clustering –IncludeManagementTools -ComputerName $VMname<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Step 03 – Before go ahead and create the cluster, let’s go ahead and validate our cluster configuration.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Test-Cluster –Node ‘ws164cls1′,’ws164cls2′,’ws164cls3’ –Include “Storage Spaces Direct”,Inventory,Network,”System Configuration”<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image007.png"><!-- raw HTML omitted --></a></p>
+<p>Validate Test comes back with a failure for Disk Configuration. This is due to Technical Preview 5 not recognizing Virtual Hard Drive storage media type. This will be fixed in the next release, but for now we need to proceed ahead and skip some of the validation for this to work within Technical Preview 5.</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image009.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image011.png"><!-- raw HTML omitted --></a></p>
+<p>Step 04 – Let’s go ahead and create a new cluster without any storage.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-Cluster –Name ‘ws164cluster1’ –Node ‘ws164cls1′,’ws164cls2′,’ws164cls3’ –NoStorage<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image013.png"><!-- raw HTML omitted --></a></p>
+<p>Step 05 – I will configure Cloud Witness for this cluster</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Set-ClusterQuorum –CloudWitness –AccountName <!-- raw HTML omitted --> -AccessKey <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image015.png"><!-- raw HTML omitted --></a></p>
+<p>Step 06 – Now that we have created a cluster, next option is for us to go ahead and enable Storage Spaces Direct. Please note that we cannot use the commends we used part of Technical Preview 04 since the enable option will fail as it cannot detect required storage disks. This is due to Technical Preview 5 not recognizing Virtual Hard drives and due to this reason we need to skip eligibility checks.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Enable-ClusterS2D -CacheMode Disabled -AutoConfig:0 -SkipEligibilityChecks -Confirm<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image016.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image018.png"><!-- raw HTML omitted --></a></p>
+<p>Step 07 – Once we have enabled Storage Spaces Direct, we need to go ahead and manually create Storage Pool. If we were using Physical Server, we could use auto configuration but this will not work at the moment for Virtual Machines.</p>
+<p><em><!-- raw HTML omitted -->New-StoragePool -StorageSubSystemFriendlyName <em>Cluster</em> -FriendlyName S2D -ProvisioningTypeDefault Fixed -PhysicalDisk (Get-PhysicalDisk | ? CanPool -eq $true)<!-- raw HTML omitted --></em></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image020.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image022.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image024.png"><!-- raw HTML omitted --></a></p>
+<p>Step 08 – Create Storage Tiers</p>
+<p>$pool = Get-StoragePool S2D</p>
+<p><em><!-- raw HTML omitted -->New-StorageTier -StoragePoolUniqueID ($pool).UniqueID -FriendlyName Performance -MediaType HDD -ResiliencySettingName Mirror<!-- raw HTML omitted --></em></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-StorageTier -StoragePoolUniqueID ($pool).UniqueID -FriendlyName Capacity -MediaType HDD -ResiliencySettingName Parity<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Step 09 – Create a Volume</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-Volume -StoragePool $pool -FriendlyName Mirror -FileSystem CSVFS_REFS -StorageTierFriendlyNames ‘Performance’,’Capacity’ -StorageTierSizes 50GB, 200GB<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image026.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image028.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image030.png"><!-- raw HTML omitted --></a></p>
+<p>Within Cluster Manager we can now see that we have a new CSV disk available, which can be used by Hyper-V for hosting Virtual Machines.</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image032.png"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image034.png"><!-- raw HTML omitted --></a></p>
+<p>As mentioned before, if a single node fails, we still have access to storage</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image036.jpg"><!-- raw HTML omitted --></a></p>
+<p>Turnoff WS164CLS3</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image038.jpg"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image040.jpg"><!-- raw HTML omitted --></a></p>
+<p>CSV disk is still online and we can see that it has moved in to WS165CLS2. We can still do read/write</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image042.jpg"><!-- raw HTML omitted --></a></p>
+<p>However, if we have two node failures, then we will lose access to storage</p>
+<p><a href="../wp-content/uploads/2016/05/clip_image044.jpg"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image046.jpg"><!-- raw HTML omitted --></a></p>
+<p><a href="../wp-content/uploads/2016/05/clip_image048.jpg"><!-- raw HTML omitted --></a></p>
+<p>References for more information</p>
+<p><a href="https://technet.microsoft.com/en-us/library/mt126109.aspx">Technet-Storage Spaces Direct in Windows Server 2016 Technical Preview</a></p>
+<p><a href="https://technet.microsoft.com/en-us/library/mt651650.aspx">Technet-Storage Spaces Direct Hardware Requirements</a></p>
+<p><a href="https://technet.microsoft.com/en-us/library/mt693395.aspx">Hyper-converged solution using Storage Spaces Direct in Windows Server 2016</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/s2d/" rel="tag">S2D</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/storagespaces/" rel="tag">StorageSpaces</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/storagespacesdirect/" rel="tag">StorageSpacesDirect</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/tp5/" rel="tag">TP5</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windowsserver/" rel="tag">WindowsServer</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+	</div>
+	<div class="authorbox__description">
+		Microsoft Cloud Solution Architect
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/" rel="prev">
+			<span class="post-nav__caption">«&thinsp;Previous</span>
+			<p class="post-nav__post-title">Now Available! Windows Server and System Center 2016 Technical Preview 5!</p>
+		</a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/" rel="next">
+			<span class="post-nav__caption">Next&thinsp;»</span>
+			<p class="post-nav__post-title">Import All Virtual Machines in a Folder using Powershell</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Nirmal Thewarathanthri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

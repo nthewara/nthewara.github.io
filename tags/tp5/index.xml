@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TP5 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/tp5/</link>
+    <description>Recent content in TP5 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jun 2016 05:09:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tp5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Update using Azure Server Management Tools</title>
+      <link>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</guid>
+      <description>Microsoft recently updated Azure Server Management tools with a new functionality, which allows remote execution of Windows updates against managed Windows Server / Nano Server instances using Azure Server Management tools. For those who are not familiar Azure Server management tools, I wrote a blog post recently announcing Azure Server Management Tools, which is a new method for managing Windows Server 2016 Servers and also Nano Servers. (https://nirmalt.com/2016/02/26/azure-server-management-toolsinstallation/)
+Let’s have a look at the new patch management process using Server Management Tools.</description>
+    </item>
+    
+    <item>
+      <title>Import All Virtual Machines in a Folder using Powershell</title>
+      <link>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</guid>
+      <description>Hello Everyone
+Quick blog post to walkthrough a script that I used during my Windows Server Technical Preview 5 Lab refresh. I used below script to search through a folder and look for all the virtual machines, and then get them imported in to Hyper-V. Credit should go to Ben who blogged about this few years back but the script was specific for Windows Server 2012 R2 which uses XML for VM configuration.</description>
+    </item>
+    
+    <item>
+      <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
+      <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</guid>
+      <description>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+  </channel>
+</rss>

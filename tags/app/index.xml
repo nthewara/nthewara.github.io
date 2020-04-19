@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/app/</link>
+    <description>Recent content in App on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Nov 2016 18:13:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Application Dependency Monitoring with OMS</title>
+      <link>/posts/2016-11-22-application-dependency-monitoring-with-oms/</link>
+      <pubDate>Tue, 22 Nov 2016 18:13:40 +0000</pubDate>
+      
+      <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
+      <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
+Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
+
+We can also see Windows Updates on each of the dependent servers</description>
+    </item>
+    
+  </channel>
+</rss>

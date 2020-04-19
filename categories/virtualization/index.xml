@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/virtualization/</link>
+    <description>Recent content in Virtualization on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Mar 2017 08:48:28 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Azure Site Recovery Unified setup 9.7 &amp;#8211; Change input language to English</title>
+      <link>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</guid>
+      <description>In this blog post, I’m going to walkthrough and issue which I came across recently while setting up a lab environment for a customer. I downloaded latest ASR unified setup yesterday to build VMware (on-premises) to Azure (DR) scenario for a client. While running ASR Unified Setup, I came across below error, which was a bit strange for me as I had not seen that error before when running this setup(build a similar setup last month).</description>
+    </item>
+    
+    <item>
+      <title>Import All Virtual Machines in a Folder using Powershell</title>
+      <link>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</guid>
+      <description>Hello Everyone
+Quick blog post to walkthrough a script that I used during my Windows Server Technical Preview 5 Lab refresh. I used below script to search through a folder and look for all the virtual machines, and then get them imported in to Hyper-V. Credit should go to Ben who blogged about this few years back but the script was specific for Windows Server 2012 R2 which uses XML for VM configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

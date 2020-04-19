@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nano Server on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/nano-server/</link>
+    <description>Recent content in Nano Server on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Apr 2016 10:26:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nano-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why Nano Server</title>
+      <link>/posts/2016-04-12-why-nano-server/</link>
+      <pubDate>Tue, 12 Apr 2016 10:26:35 +0000</pubDate>
+      
+      <guid>/posts/2016-04-12-why-nano-server/</guid>
+      <description>A common question that gets raised around new Windows Server 2016 Technical Preview is around Why we should deploy Nano Server and what’s the benefit. In this blog post I will discuss few benefits when using Nano Server deployment Method.
+Starting with Windows Server 2012, we had 3 deployment options
+ Server Core Deployment Option MinShell Deployment Option Full Desktop Experience Deployment Option  Back then, for deployments such as Hyper-V it was recommended to deploy Server Core due to limited attack surface and reduced patches/hotfixes which we had to deploy.</description>
+    </item>
+    
+  </channel>
+</rss>

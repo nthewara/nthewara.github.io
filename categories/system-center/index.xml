@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System Center on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/system-center/</link>
+    <description>Recent content in System Center on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Oct 2016 18:52:18 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/system-center/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 General Availability</title>
+      <link>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</link>
+      <pubDate>Wed, 12 Oct 2016 18:52:18 +0000</pubDate>
+      
+      <guid>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</guid>
+      <description>Microsoft released evaluation bits for Windows Server 2016 and System Center 2016 during Ignite Conference in Atlanta on 27thSeptember 2016. Having released evaluation bits, Microsoft made these two products generally available on 12thOctober, which added them to MSDN and also into Volume Licensing Service Center for Enterprise Customers.
+Evaluation media can be downloaded from links below
+Windows Server 2016: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016?i=1
+System Center 2016: https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-2016
+While there are many sessions at Ignite, which highlights capabilities presented within Windows Server 2016, feel free to have a look at some of the videos below as well.</description>
+    </item>
+    
+  </channel>
+</rss>

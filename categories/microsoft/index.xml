@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/microsoft/</link>
+    <description>Recent content in Microsoft on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert existing Azure Virtual Machines to use Hybrid Use Benefit</title>
+      <link>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</guid>
+      <description>Hybrid Use Benefit (HUB) Allows customers with Software Assurance to use their on-premises Windows Server licenses to license Servers in Azure. With one Windows Server license, you can run two Windows Server Virtual Machines up to 8 Cores or a single Virtual Machine up to 16 Cores. This is a significant price reduction for customers who are using standard Windows Server image from Azure Marketplace (Up to around 40% cost saving).</description>
+    </item>
+    
+    <item>
+      <title>Windows Update using Azure Server Management Tools</title>
+      <link>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</guid>
+      <description>Microsoft recently updated Azure Server Management tools with a new functionality, which allows remote execution of Windows updates against managed Windows Server / Nano Server instances using Azure Server Management tools. For those who are not familiar Azure Server management tools, I wrote a blog post recently announcing Azure Server Management Tools, which is a new method for managing Windows Server 2016 Servers and also Nano Servers. (https://nirmalt.com/2016/02/26/azure-server-management-toolsinstallation/)
+Let’s have a look at the new patch management process using Server Management Tools.</description>
+    </item>
+    
+    <item>
+      <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
+      <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</guid>
+      <description>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+  </channel>
+</rss>

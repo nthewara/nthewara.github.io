@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S2D on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/s2d/</link>
+    <description>Recent content in S2D on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Feb 2017 22:11:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/s2d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SQL Server 2016 Failover Cluster Instances in Azure</title>
+      <link>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</guid>
+      <description>Microsoft recently announced additional support scenarios for using Guest Clusters in Azure. In this blog post, let’s have a look how we can build a two node SQL 2016 Guest clustering in Azure using Windows Server 2016 Storage Spaces Direct.
+Utilizing Guest clusters in Azure enables mission critical application such as a SQL backend to function with greater availability if a single instance fails. By using Failover clustering and also placing virtual machines in an availability set, ensure that the application can work regardless of a hardware failure / Host updates or an application instance failure.</description>
+    </item>
+    
+    <item>
+      <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
+      <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</guid>
+      <description>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>StorageSpacesDirect on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/storagespacesdirect/</link>
+    <description>Recent content in StorageSpacesDirect on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2016 14:52:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/storagespacesdirect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
+      <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</guid>
+      <description>In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
+Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
+    </item>
+    
+  </channel>
+</rss>

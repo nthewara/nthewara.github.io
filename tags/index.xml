@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Azure IaaS</title>
+      <link>/tags/azure-iaas/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/azure-iaas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure licensing</title>
+      <link>/tags/azure-licensing/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/azure-licensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HUB</title>
+      <link>/tags/hub/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/hub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Use Benefit</title>
+      <link>/tags/hybrid-use-benefit/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/hybrid-use-benefit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software assurance</title>
+      <link>/tags/software-assurance/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/software-assurance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual machine</title>
+      <link>/tags/virtual-machine/</link>
+      <pubDate>Wed, 21 Jun 2017 22:40:30 +0000</pubDate>
+      
+      <guid>/tags/virtual-machine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4TB</title>
+      <link>/tags/4tb/</link>
+      <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
+      
+      <guid>/tags/4tb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure Disk</title>
+      <link>/tags/azure-disk/</link>
+      <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
+      
+      <guid>/tags/azure-disk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ExtendedDisk</title>
+      <link>/tags/extendeddisk/</link>
+      <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
+      
+      <guid>/tags/extendeddisk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managed Disks</title>
+      <link>/tags/managed-disks/</link>
+      <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
+      
+      <guid>/tags/managed-disks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>9.7</title>
+      <link>/tags/9.7/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/tags/9.7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASR</title>
+      <link>/tags/asr/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/tags/asr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASR Unified Setup</title>
+      <link>/tags/asr-unified-setup/</link>
+      <pubDate>Tue, 21 Mar 2017 08:48:28 +0000</pubDate>
+      
+      <guid>/tags/asr-unified-setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S2D</title>
+      <link>/tags/s2d/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/tags/s2d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL FCI</title>
+      <link>/tags/sql-fci/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/tags/sql-fci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure VM</title>
+      <link>/tags/azure-vm/</link>
+      <pubDate>Wed, 23 Nov 2016 11:20:28 +0000</pubDate>
+      
+      <guid>/tags/azure-vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SLA</title>
+      <link>/tags/sla/</link>
+      <pubDate>Wed, 23 Nov 2016 11:20:28 +0000</pubDate>
+      
+      <guid>/tags/sla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>App</title>
+      <link>/tags/app/</link>
+      <pubDate>Tue, 22 Nov 2016 18:13:40 +0000</pubDate>
+      
+      <guid>/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSOMS</title>
+      <link>/tags/msoms/</link>
+      <pubDate>Tue, 22 Nov 2016 18:13:40 +0000</pubDate>
+      
+      <guid>/tags/msoms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Award</title>
+      <link>/tags/award/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/tags/award/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud&amp;amp;Datacenter</title>
+      <link>/tags/cloudampdatacenter/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/tags/cloudampdatacenter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAnagement</title>
+      <link>/tags/management/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ServerManagement</title>
+      <link>/tags/servermanagement/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/servermanagement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TP5</title>
+      <link>/tags/tp5/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/tp5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindowsServer</title>
+      <link>/tags/windowsserver/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/windowsserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindowsServer2016</title>
+      <link>/tags/windowsserver2016/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/windowsserver2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyper-V</title>
+      <link>/tags/hyper-v/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/tags/hyper-v/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import</title>
+      <link>/tags/import/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/tags/import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powershell</title>
+      <link>/tags/powershell/</link>
+      <pubDate>Mon, 02 May 2016 20:55:38 +0000</pubDate>
+      
+      <guid>/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StorageSpaces</title>
+      <link>/tags/storagespaces/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/tags/storagespaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StorageSpacesDirect</title>
+      <link>/tags/storagespacesdirect/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/tags/storagespacesdirect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nano</title>
+      <link>/tags/nano/</link>
+      <pubDate>Tue, 12 Apr 2016 10:26:35 +0000</pubDate>
+      
+      <guid>/tags/nano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nano Server</title>
+      <link>/tags/nano-server/</link>
+      <pubDate>Tue, 12 Apr 2016 10:26:35 +0000</pubDate>
+      
+      <guid>/tags/nano-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NanoServer</title>
+      <link>/tags/nanoserver/</link>
+      <pubDate>Tue, 12 Apr 2016 10:26:35 +0000</pubDate>
+      
+      <guid>/tags/nanoserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure;ServerManagement;WS2016;Windows;Server</title>
+      <link>/tags/azureservermanagementws2016windowsserver/</link>
+      <pubDate>Fri, 26 Feb 2016 16:54:07 +0000</pubDate>
+      
+      <guid>/tags/azureservermanagementws2016windowsserver/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
