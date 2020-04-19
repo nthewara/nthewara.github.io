@@ -63,26 +63,26 @@ First Step involved in setting up Server Management Tools is for us to create a 
 <div class="content post__content clearfix">
 			<p>In my previous post, I provided an <a href="http://nirmalt.com/2016/02/12/azure-server-management-tools-previewintroduction/">Introduction to Azure Server Management Tools</a>. In this blog post we will look at installing &amp; configuration Server Management Tools.</p>
 <p>First Step involved in setting up Server Management Tools is for us to create a Server Management Tools Connection. Once a connection has been created, we can go ahead and provision Server Management Tools gateway. Gateway is an essential component which provides Azure Server Management Tools service, connectivity in to your on-premises or azure hosted Server 2016 VMs (At the moment support is only for Windows Server 2016 Technical Preview).</p>
-<p><a href="../wp-content/uploads/2016/03/image.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image.png" alt=""></p>
 <p><strong><!-- raw HTML omitted -->Step 01 – Create Server Management Tools Connection<!-- raw HTML omitted --></strong></p>
 <p>Login to Azure Portal and click New -&gt; search for Server Management Tools</p>
 <p>Create Server Management Tools Connection. Provide a computer name for a VM or Server running with Windows Server Technical Preview. Select your subscription and the local. Next step is for us to create the gateway.</p>
-<p><a href="../wp-content/uploads/2016/03/image1.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image1.png" alt=""></p>
 <p><strong><!-- raw HTML omitted -->Step 02 – Deploy Server Management Tools Gateway<!-- raw HTML omitted --></strong></p>
 <p>After creating a Server connection navigate to Server management tools gateways -&gt; click on the gateway and then click setup</p>
-<p><a href="../wp-content/uploads/2016/03/image2.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image2.png" alt=""></p>
 <p>Grab the installation link and access your Gateway Server VM. open your browser and then download the gateway deployment package.</p>
 <p>Extract the package and then run GatewayService.MSI  (Make sure that you extract the package before running GatewayService.MSI).</p>
-<p><a href="../wp-content/uploads/2016/03/image3.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image3.png" alt=""></p>
 <p>Gateway Setup Installation -&gt; Accept License Agreement and click Install</p>
-<p><a href="../wp-content/uploads/2016/03/image4.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image4.png" alt=""></p>
 <p>Installation should only take few minutes</p>
-<p><a href="../wp-content/uploads/2016/03/image5.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image5.png" alt=""></p>
 <p>Once you have configured navigate to -&gt; Server management tools connections</p>
 <p>Initially, there won’t be any data populated. it’s required to provide Management credentials to establish connectivity.</p>
-<p><a href="../wp-content/uploads/2016/03/image6.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image6.png" alt=""></p>
 <p>Once you have provided access credentials, we will be able to see performance data populated and also we get access to Server Management Tools.</p>
-<p><a href="../wp-content/uploads/2016/03/image7.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/03/image7.png" alt=""></p>
 
 		</div>
 		<footer class="post__footer">

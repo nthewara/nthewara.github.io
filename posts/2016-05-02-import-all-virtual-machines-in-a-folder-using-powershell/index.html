@@ -71,8 +71,8 @@ Quick blog post to walkthrough a script that I used during my Windows Server Tec
 <pre><code>Get-ChildItem d:\vm -Recurse -Filter &quot;Virtual Machines&quot; | %{Get-ChildItem $_.FullName -Filter *.xml} | %{import-vm $_.FullName -Register}
 </code></pre>
 <p>“D:\VM” is the folder location given to search for Virtual Machine configuration files.</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image001.jpg"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image002.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image001.jpg" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image002.jpg" alt=""></p>
 <p>Reference : – <a href="https://blogs.msdn.microsoft.com/virtual_pc_guy/2013/08/21/bulk-registering-virtual-machines-with-powershell/">https://blogs.msdn.microsoft.com/virtual_pc_guy/2013/08/21/bulk-registering-virtual-machines-with-powershell/</a></p>
 
 		</div>

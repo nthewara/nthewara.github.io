@@ -31,5 +31,26 @@ This year, I’m part of the Cloud &amp;amp; Datacenter Management award categor
 What’s New in Windows Server 2016 Technical Preview 5</description>
     </item>
     
+    <item>
+      <title>Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-28-installing-nano-servertechnical-preview-4/</link>
+      <pubDate>Sat, 28 Nov 2015 09:55:43 +0000</pubDate>
+      
+      <guid>/posts/2015-11-28-installing-nano-servertechnical-preview-4/</guid>
+      <description>In this blog post we will look at how to deploy a Nano Server instance using Windows Server Technical Preview 4.
+First of all there are two ways of deploying Nano Sever. First method is for deploying Nano Server on a VM and the Second method is for deploying Nano Server on a Physical machine. In this blog post, we will look at deploying Nano Server on a Physical machine.</description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 Preview is now available</title>
+      <link>/posts/2013-06-27-windows-8-1-preview-is-now-available/</link>
+      <pubDate>Thu, 27 Jun 2013 01:02:51 +0000</pubDate>
+      
+      <guid>/posts/2013-06-27-windows-8-1-preview-is-now-available/</guid>
+      <description>Microsoft just announced availability for Windows 8.1 Preview at the Build Conference. 8.1 Preview update can be downloaded as an update using Windows Store or it can also be downloaded as an ISO file. please use below to obtain Windows 8.1 Preview version.
+](http://windows.microsoft.com/en-us/windows-8/download-preview &amp;ldquo;http://windows.microsoft.com/en-us/windows-8/download-preview&amp;quot;)
+http://windows.microsoft.com/en-us/windows-8/download-preview</description>
+    </item>
+    
   </channel>
 </rss>

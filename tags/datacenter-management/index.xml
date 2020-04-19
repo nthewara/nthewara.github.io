@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datacenter Management on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/datacenter-management/</link>
+    <description>Recent content in Datacenter Management on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jan 2013 11:57:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/datacenter-management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>System Center 2012 SP1 &amp;#8211; General Availability</title>
+      <link>/posts/2013-01-17-system-center-2012-sp1-general-availability/</link>
+      <pubDate>Thu, 17 Jan 2013 11:57:16 +0000</pubDate>
+      
+      <guid>/posts/2013-01-17-system-center-2012-sp1-general-availability/</guid>
+      <description>System Center 2012 SP1 Final release was made available to public (General Availability) on 15thJan. System Center SP1 delivers many enhanced capabilities across both desktop management and datacenter management.
+Some of the key changes with SP1 for Datacenter Management
+ Support for Windows Server 2012 and SQL Server 2012 Software Defined Networking (Network Virtualization) Global Service Monitor with Windows Azure / Visual Studio &amp;amp; Operations Manager Hybrid Cloud Management (Integration of Off-premises Resources in to your own Datacenter) Cloud-based Pricing and Chargeback Copy an On-premises Virtual Machine to Windows Azure Windows Azure Online Backup integration with Data Protection Manager  More information –</description>
+    </item>
+    
+  </channel>
+</rss>

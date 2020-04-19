@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WSSC on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/wssc/</link>
+    <description>Recent content in WSSC on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jun 2013 19:03:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wssc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Server &amp;#038; System Center 2012 R2 Preview now available for download</title>
+      <link>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</guid>
+      <description>Microsoft has just released preview version of Windows Server 2012 R2 &amp;amp; System Center 2012 R2. Preview versions can be downloaded from link below
+http://technet.microsoft.com/en-US/evalcenter/dn205292?WT.mc_id=Blog_SC_TEE_WS12R2
+along with above mentioned products, there’s also preview versions available for following products
+ -Windows Server 2012 R2 Preview on Windows Azure
+-Windows Server 2012 R2 Essentials Preview
+-SQL Server 2014 CTP 1
+-Windows Azure Pack
+ For information relating to what’s new on Windows Server 2012 R2 use below link</description>
+    </item>
+    
+  </channel>
+</rss>

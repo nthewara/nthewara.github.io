@@ -40,5 +40,81 @@ Let’s have a look at the new patch management process using Server Management 
 Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
     </item>
     
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</guid>
+      <description> Nano Server (DNS Server / IIS Server roles and also previously included scale out File Server &amp;amp; Hyper-V Role) Windows Containers Site-Aware Failover Cluster, Workgroup and Multi-domain Clusters Hyper-V Virtual Machine Resiliency Cloud Witness Cloud Operating System Rolling Upgrade Storage Spaces Direct Storage Replica   </description>
+    </item>
+    
+    <item>
+      <title>Azure Announcements at AzureCon 2015</title>
+      <link>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</guid>
+      <description>Quick post to summerize some of the new Azure Announcements at AzureCON 2015 event.
+– 3 New Azure Datacentres Announced (3 in India), with this Microsoft has more datacentre than Google and AWS combined(24 Regions around the world)
+– New N-Series VMs which has GPU Capabilities– for graphics-intensive workloads
+– New next generation D Series Virtual Machines (DV2 – 35% Faster than D series VMs)
+– Azure Security Centre Announced – to be made available later this year</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Preview–January Build Now Available (9926)</title>
+      <link>/posts/2015-01-24-windows-10-previewjanuary-build-now-available-9926/</link>
+      <pubDate>Sat, 24 Jan 2015 08:31:18 +0000</pubDate>
+      
+      <guid>/posts/2015-01-24-windows-10-previewjanuary-build-now-available-9926/</guid>
+      <description>Microsoft has just released latest preview build for Windows 10 which is known as the January Build or Technical Preview 2. This release contains build version 9926. Latest build comes with Cortana and XBOX features which were demonstrated few days back at the Public event held by Microsoft.
+In order to obtain this build, you need to either be a Windows Insider (join for free https://insider.windows.com) or it’s possible to download from MSDN Subscription.</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2014 General Availability</title>
+      <link>/posts/2014-04-02-sql-server-2014-general-availability/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/posts/2014-04-02-sql-server-2014-general-availability/</guid>
+      <description>Today morning, Microsoft announced general availability for next major release of Microsoft SQL Server product which is called “SQL Server 2014”.
+I have listed below some of the key highlights of SQL Server 2014 release
+  Up to 30x In-Memory OLTP performance gains New Cloud Migration Wizard Clustered Columnstore indexes  –
+ please find below official announcement from Microsoft SQL Product team blog
+http://blogs.technet.com/b/dataplatforminsider/archive/2014/04/01/sql-server-2014-now-generally-available.aspx
+SQL Server 2014 Datasheet</description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 / Server 2012 R2 RTM Now Available on MSDN &amp;#038; TECHNET</title>
+      <link>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</guid>
+      <description>Microsoft announced yesterday that they will be making Windows 8.1 RTM / Windows Server 2012 RTM &amp;amp; Visual Studio 2013 RC made available for developer community based on feedback received. This was a slight deviation from previous communication when both products hit internal RTM milestone. however I’m extremely pleased for being able to obtain RTM bits for both Windows Client &amp;amp; Windows Server prior to GA milestone which is 18th October.</description>
+    </item>
+    
+    <item>
+      <title>Unable to Sign-in to Skype–Windows 8 Release Preview</title>
+      <link>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</guid>
+      <description>I noticed that I’m unable to sign-in to Skype on my Windows 8 Release Preview version. I have tried to find a solution for this login issue and finally I discovered that we can delete shared.xml file and fix this issue.
+first you need to make sure that Skype is not running, if its running you need to close it or end taskafter closing Skype navigate towards “%appdata%/Skype” and delete shared.</description>
+    </item>
+    
+    <item>
+      <title>Windows 8 Release Preview &amp;#038; Windows Server 2012 Release Candidate Now Available</title>
+      <link>/posts/2012-06-01-windows-8-release-preview-windows-server-2012-release-candidate-now-available/</link>
+      <pubDate>Fri, 01 Jun 2012 01:02:40 +0000</pubDate>
+      
+      <guid>/posts/2012-06-01-windows-8-release-preview-windows-server-2012-release-candidate-now-available/</guid>
+      <description>Microsoft released Windows 8 Release Preview &amp;amp; Server 2012 Release Candidate on 31st May 2012, which is the pre-RTM version of Windows Client &amp;amp; Server Operating systems, going to be available later this year. You can download both Client &amp;amp; Server operating systems using links below
+Download Windows 8 Release Preview http://aka.ms/win8rp
+Download Windows Server 2012 Release Candidate http://aka.ms/ws2012rc</description>
+    </item>
+    
   </channel>
 </rss>

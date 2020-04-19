@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WindowsServer2012R2 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/windowsserver2012r2/</link>
+    <description>Recent content in WindowsServer2012R2 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 May 2014 13:45:15 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/windowsserver2012r2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TECH2014 Houston Sessions by Cluster Team</title>
+      <link>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</guid>
+      <description>Cluster Product group presented multiple sessions at TECH2014 which took place in Houston from 12th to 15th May 2014. please find below list of sessions which were presented at the event.
+1) ****DCIM-B354 Failover Clustering: What’s New in Windows Server 2012 R2
+2) ****DCIM-B364 Step-by-Step to Deploying Microsoft SQL Server 2014 with Cluster Shared Volumes
+3) ****DCIM-B349 Software-Defined Storage in Windows Server 2012 R2 and Microsoft System Center 2012 R2</description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 / Server 2012 R2 RTM Now Available on MSDN &amp;#038; TECHNET</title>
+      <link>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</guid>
+      <description>Microsoft announced yesterday that they will be making Windows 8.1 RTM / Windows Server 2012 RTM &amp;amp; Visual Studio 2013 RC made available for developer community based on feedback received. This was a slight deviation from previous communication when both products hit internal RTM milestone. however I’m extremely pleased for being able to obtain RTM bits for both Windows Client &amp;amp; Windows Server prior to GA milestone which is 18th October.</description>
+    </item>
+    
+    <item>
+      <title>Windows Server &amp;#038; System Center 2012 R2 Preview now available for download</title>
+      <link>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</guid>
+      <description>Microsoft has just released preview version of Windows Server 2012 R2 &amp;amp; System Center 2012 R2. Preview versions can be downloaded from link below
+http://technet.microsoft.com/en-US/evalcenter/dn205292?WT.mc_id=Blog_SC_TEE_WS12R2
+along with above mentioned products, there’s also preview versions available for following products
+ -Windows Server 2012 R2 Preview on Windows Azure
+-Windows Server 2012 R2 Essentials Preview
+-SQL Server 2014 CTP 1
+-Windows Azure Pack
+ For information relating to what’s new on Windows Server 2012 R2 use below link</description>
+    </item>
+    
+  </channel>
+</rss>

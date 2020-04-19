@@ -69,59 +69,59 @@ Before I move any further, I would like to highlight some of the key features in
 <p>– Deployment with 3 Servers</p>
 <p>– Deployments with NVMe,SSD and HDD</p>
 <p>Overview of Storage Spaces Direct</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image001.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image001.png" alt=""></p>
 <p>Storage Spaces Direct enables building highly available and scalable storage systems using local storage. We can utilize storage locally attached to individual nodes such as HDD, SSD and NVMe drives for creating Storage Spaces Direct volumes.</p>
 <p>There are two deployment scenarios with Storage Spaces Direct. Hyper-Converged scenarios and disaggregated scenario. In this post, I will be demonstrating Hyper-Converged scenario.</p>
 <p>In this blog post let’s look at how we can create, Storage Spaces Direct with 3 Virtual Machines with mirrored resiliency. This deployment is resilient for a single node failure.</p>
 <p><!-- raw HTML omitted -->Step 01 – Create 3 Virtual Machines with 2 Networks and 3 Hard Drives (1 for OS and the other two for Storage Spaces Direct). Add all 3 Virtual Machines to a domain.<!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image003.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image005.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image003.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image005.png" alt=""></p>
 <p>Step 02- is for us to go and install Failover Clustering features and File Services. You can do so by using PowerShell command below.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Install-WindowsFeature –Name File-Services, Failover-Clustering –IncludeManagementTools -ComputerName $VMname<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>Step 03 – Before go ahead and create the cluster, let’s go ahead and validate our cluster configuration.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Test-Cluster –Node ‘ws164cls1′,’ws164cls2′,’ws164cls3’ –Include “Storage Spaces Direct”,Inventory,Network,”System Configuration”<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image007.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image007.png" alt=""></p>
 <p>Validate Test comes back with a failure for Disk Configuration. This is due to Technical Preview 5 not recognizing Virtual Hard Drive storage media type. This will be fixed in the next release, but for now we need to proceed ahead and skip some of the validation for this to work within Technical Preview 5.</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image009.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image011.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image009.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image011.png" alt=""></p>
 <p>Step 04 – Let’s go ahead and create a new cluster without any storage.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-Cluster –Name ‘ws164cluster1’ –Node ‘ws164cls1′,’ws164cls2′,’ws164cls3’ –NoStorage<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image013.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image013.png" alt=""></p>
 <p>Step 05 – I will configure Cloud Witness for this cluster</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Set-ClusterQuorum –CloudWitness –AccountName <!-- raw HTML omitted --> -AccessKey <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image015.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image015.png" alt=""></p>
 <p>Step 06 – Now that we have created a cluster, next option is for us to go ahead and enable Storage Spaces Direct. Please note that we cannot use the commends we used part of Technical Preview 04 since the enable option will fail as it cannot detect required storage disks. This is due to Technical Preview 5 not recognizing Virtual Hard drives and due to this reason we need to skip eligibility checks.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Enable-ClusterS2D -CacheMode Disabled -AutoConfig:0 -SkipEligibilityChecks -Confirm<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image016.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image018.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image016.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image018.png" alt=""></p>
 <p>Step 07 – Once we have enabled Storage Spaces Direct, we need to go ahead and manually create Storage Pool. If we were using Physical Server, we could use auto configuration but this will not work at the moment for Virtual Machines.</p>
 <p><em><!-- raw HTML omitted -->New-StoragePool -StorageSubSystemFriendlyName <em>Cluster</em> -FriendlyName S2D -ProvisioningTypeDefault Fixed -PhysicalDisk (Get-PhysicalDisk | ? CanPool -eq $true)<!-- raw HTML omitted --></em></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image020.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image022.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image024.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image020.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image022.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image024.png" alt=""></p>
 <p>Step 08 – Create Storage Tiers</p>
 <p>$pool = Get-StoragePool S2D</p>
 <p><em><!-- raw HTML omitted -->New-StorageTier -StoragePoolUniqueID ($pool).UniqueID -FriendlyName Performance -MediaType HDD -ResiliencySettingName Mirror<!-- raw HTML omitted --></em></p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-StorageTier -StoragePoolUniqueID ($pool).UniqueID -FriendlyName Capacity -MediaType HDD -ResiliencySettingName Parity<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>Step 09 – Create a Volume</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->New-Volume -StoragePool $pool -FriendlyName Mirror -FileSystem CSVFS_REFS -StorageTierFriendlyNames ‘Performance’,’Capacity’ -StorageTierSizes 50GB, 200GB<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image026.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image028.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image030.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image026.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image028.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image030.png" alt=""></p>
 <p>Within Cluster Manager we can now see that we have a new CSV disk available, which can be used by Hyper-V for hosting Virtual Machines.</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image032.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image034.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image032.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image034.png" alt=""></p>
 <p>As mentioned before, if a single node fails, we still have access to storage</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image036.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image036.jpg" alt=""></p>
 <p>Turnoff WS164CLS3</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image038.jpg"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image040.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image038.jpg" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image040.jpg" alt=""></p>
 <p>CSV disk is still online and we can see that it has moved in to WS165CLS2. We can still do read/write</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image042.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image042.jpg" alt=""></p>
 <p>However, if we have two node failures, then we will lose access to storage</p>
-<p><a href="../wp-content/uploads/2016/05/clip_image044.jpg"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image046.jpg"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/05/clip_image048.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image044.jpg" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image046.jpg" alt=""></p>
+<p><img src="../wp-content/uploads/2016/05/clip_image048.jpg" alt=""></p>
 <p>References for more information</p>
 <p><a href="https://technet.microsoft.com/en-us/library/mt126109.aspx">Technet-Storage Spaces Direct in Windows Server 2016 Technical Preview</a></p>
 <p><a href="https://technet.microsoft.com/en-us/library/mt651650.aspx">Technet-Storage Spaces Direct Hardware Requirements</a></p>

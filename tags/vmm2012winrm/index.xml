@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmm2012;WinRM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/vmm2012winrm/</link>
+    <description>Recent content in vmm2012;WinRM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2014 13:46:59 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vmm2012winrm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMM 2012 R2 Error–Hardware Management error has occurred trying to contact server</title>
+      <link>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</link>
+      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
+      
+      <guid>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</guid>
+      <description>In this blog post i will be discussing regarding an issue which i have faced recently on System Center Virtual Machine Manager 2012 R2. In one of my recent projects, I had to setup two VMM 2012 R2 instances to configure Azure Site Recovery, for a Datacenter Failover simulation. While installing VMM 2012 R2, I noticed that my installation failed with a WinRM issue.
+Quickly investigating this issue, I have checked my firewall settings and WinRM configuration</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/office/</link>
+    <description>Recent content in Office on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2013 01:44:06 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/office/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mark my Comments on Outlook</title>
+      <link>/posts/2013-05-22-mark-my-comments-on-outlook/</link>
+      <pubDate>Wed, 22 May 2013 01:44:06 +0000</pubDate>
+      
+      <guid>/posts/2013-05-22-mark-my-comments-on-outlook/</guid>
+      <description>Often when responding back to emails, we need to provide our comments inline. we usually do this manually by adding our name, changing fonts, making font bold etc. it’s possible to mark comments automatically on Outlook and I find it as a great feature which saves a significant amount of time.
+On outlook 2013, you need to follow below mentioned steps to get it activated as this feature is not enabled by default.</description>
+    </item>
+    
+  </channel>
+</rss>

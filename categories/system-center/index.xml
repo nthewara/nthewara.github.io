@@ -24,5 +24,114 @@ System Center 2016: https://www.microsoft.com/en-us/evalcenter/evaluate-system-c
 While there are many sessions at Ignite, which highlights capabilities presented within Windows Server 2016, feel free to have a look at some of the videos below as well.</description>
     </item>
     
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</guid>
+      <description> Nano Server (DNS Server / IIS Server roles and also previously included scale out File Server &amp;amp; Hyper-V Role) Windows Containers Site-Aware Failover Cluster, Workgroup and Multi-domain Clusters Hyper-V Virtual Machine Resiliency Cloud Witness Cloud Operating System Rolling Upgrade Storage Spaces Direct Storage Replica   </description>
+    </item>
+    
+    <item>
+      <title>Wire Data Analysis with Operations Management Suite</title>
+      <link>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</guid>
+      <description>Wire Data Analysis capability was made available to Operations Management Suite (OMS) recently, and i had a quick look at it today.
+This solution provides network traffic analysis using existing OMS Agent for Windows 2012 R2 servers, Windows 8.1 clients and newer operating systems. To enable this functionality, all we need to do is to navigate to Solutions Gallery, Select Wire Data and click Add. Once you click add, OMS Agent will start collecting information and push them back to OMS Service.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 R2 with SQL 2014</title>
+      <link>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</guid>
+      <description>Microsoft announced support for SQL 2014 with Update Rollup 6 for System Center Service Manager 2012 R2. While working on a recent project, I wanted to explore the possibility of building a fresh instance of Service Manager 2012 R2 with SQL 2014.
+Since UR 6 update is not slipstreamed in to System Center Service Manager R2 Media, if you try to install it against a SQL 2014 Server, you will not be able to proceed ahead with the install.</description>
+    </item>
+    
+    <item>
+      <title>Updating Configuration Manager Client Package with Client Agent Hotfixes</title>
+      <link>/posts/2015-02-10-updating-configuration-manager-client-package-with-client-agent-hotfixes/</link>
+      <pubDate>Tue, 10 Feb 2015 07:38:10 +0000</pubDate>
+      
+      <guid>/posts/2015-02-10-updating-configuration-manager-client-package-with-client-agent-hotfixes/</guid>
+      <description>This is a quick post, to detail how we can install Configuration Manager client updates as a part of Client Deployment within Configuration Manager 2012 R2. There are multiple ways to achieve this task and the below explained method would be the easiest to configure.
+Problem: Due to multiple Cumulative updates for Configuration Manager 2012 R2, it’s required for us to update all Configuration Manager Clients and also any new machines that gets built will also need to be applied with client update package</description>
+    </item>
+    
+    <item>
+      <title>Announcing Windows 10</title>
+      <link>/posts/2014-10-01-announcing-windows-10/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/posts/2014-10-01-announcing-windows-10/</guid>
+      <description>Earlier today Microsoft announced Windows 10, next version of the client Operating System. Following the announcement today, Technical Preview to be available on 1stOctober (US Date &amp;amp; Time), which will be available for us later tonight or early tomorrow.
+Microsoft is also introducing Windows Insider Program, which allows a user to download Windows 10 Technical Preview and also provide feedback to Microsoft.
+Official Announcement -&amp;gt; http://blogs.windows.com/bloggingwindows/2014/09/30/announcing-windows-10/
+Windows Insider Program -&amp;gt; http://preview.</description>
+    </item>
+    
+    <item>
+      <title>VMM 2012 R2 Error–Hardware Management error has occurred trying to contact server</title>
+      <link>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</link>
+      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
+      
+      <guid>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</guid>
+      <description>In this blog post i will be discussing regarding an issue which i have faced recently on System Center Virtual Machine Manager 2012 R2. In one of my recent projects, I had to setup two VMM 2012 R2 instances to configure Azure Site Recovery, for a Datacenter Failover simulation. While installing VMM 2012 R2, I noticed that my installation failed with a WinRM issue.
+Quickly investigating this issue, I have checked my firewall settings and WinRM configuration</description>
+    </item>
+    
+    <item>
+      <title>MSFT_PartitionToVolume Internal Error</title>
+      <link>/posts/2013-09-17-msft_partitiontovolume-internal-error/</link>
+      <pubDate>Tue, 17 Sep 2013 06:34:32 +0000</pubDate>
+      
+      <guid>/posts/2013-09-17-msft_partitiontovolume-internal-error/</guid>
+      <description>while using VMM 2012 R2 Preview Version in my LAB environment, i noticed that i was getting errors from one of the hosts that i was managing as a Hyper-V Host.
+I found out that this issue is caused by having a SD Card in the system and VMM fails saying that it cannot communicate with my Host anymore. after removing SD Card, i was able to get VMM to work without any issues and my Hosts are responding back again.</description>
+    </item>
+    
+    <item>
+      <title>Windows Server &amp;#038; System Center 2012 R2 Preview now available for download</title>
+      <link>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</guid>
+      <description>Microsoft has just released preview version of Windows Server 2012 R2 &amp;amp; System Center 2012 R2. Preview versions can be downloaded from link below
+http://technet.microsoft.com/en-US/evalcenter/dn205292?WT.mc_id=Blog_SC_TEE_WS12R2
+along with above mentioned products, there’s also preview versions available for following products
+ -Windows Server 2012 R2 Preview on Windows Azure
+-Windows Server 2012 R2 Essentials Preview
+-SQL Server 2014 CTP 1
+-Windows Azure Pack
+ For information relating to what’s new on Windows Server 2012 R2 use below link</description>
+    </item>
+    
+    <item>
+      <title>Backup failed–nonrecoverable I/O error occurred OperationsManagerDW</title>
+      <link>/posts/2013-03-18-backup-failednonrecoverable-io-error-occurred-operationsmanagerdw/</link>
+      <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
+      
+      <guid>/posts/2013-03-18-backup-failednonrecoverable-io-error-occurred-operationsmanagerdw/</guid>
+      <description>I was recently sent this error by a customer who was trying to backup their Operations Manager 2012 Data warehouse database.
+ I did some initial troubleshooting and found out that the database was around 130GB in size and the destination didn’t have sufficient space for the backup. I tried with an alterative location with more storage space, and I was able to successfully backup the database.
+I would also recommend looking at database grooming settings for Operations Manager data warehouse, as this database could be large in size with time.</description>
+    </item>
+    
+    <item>
+      <title>System Center 2012 SP1 &amp;#8211; General Availability</title>
+      <link>/posts/2013-01-17-system-center-2012-sp1-general-availability/</link>
+      <pubDate>Thu, 17 Jan 2013 11:57:16 +0000</pubDate>
+      
+      <guid>/posts/2013-01-17-system-center-2012-sp1-general-availability/</guid>
+      <description>System Center 2012 SP1 Final release was made available to public (General Availability) on 15thJan. System Center SP1 delivers many enhanced capabilities across both desktop management and datacenter management.
+Some of the key changes with SP1 for Datacenter Management
+ Support for Windows Server 2012 and SQL Server 2012 Software Defined Networking (Network Virtualization) Global Service Monitor with Windows Azure / Visual Studio &amp;amp; Operations Manager Hybrid Cloud Management (Integration of Off-premises Resources in to your own Datacenter) Cloud-based Pricing and Chargeback Copy an On-premises Virtual Machine to Windows Azure Windows Azure Online Backup integration with Data Protection Manager  More information –</description>
+    </item>
+    
   </channel>
 </rss>

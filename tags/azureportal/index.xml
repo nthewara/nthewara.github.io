@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzurePortal on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/azureportal/</link>
+    <description>Recent content in AzurePortal on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2015 12:04:37 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/azureportal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Azure Portal General Availability</title>
+      <link>/posts/2015-12-03-azure-portal-general-availability/</link>
+      <pubDate>Thu, 03 Dec 2015 12:04:37 +0000</pubDate>
+      
+      <guid>/posts/2015-12-03-azure-portal-general-availability/</guid>
+      <description>Today morning Microsoft announced general availability for Azure Preview Portal (portal.azure.com). Logging in to the old portal(Manage.windowsazure.com), we can now see a new banner that allows you to click and re-direct to the new Azure Portal.
+https://azure.microsoft.com/en-us/blog/announcing-azure-portal-general-availability/</description>
+    </item>
+    
+  </channel>
+</rss>

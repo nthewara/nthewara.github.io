@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4 - CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4" />
+<meta property="og:description" content="In this blog post we will look at how to deploy a Nano Server instance using Windows Server Technical Preview 4.
+First of all there are two ways of deploying Nano Sever. First method is for deploying Nano Server on a VM and the Second method is for deploying Nano Server on a Physical machine. In this blog post, we will look at deploying Nano Server on a Physical machine." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2015-11-28-installing-nano-servertechnical-preview-4/" />
+<meta property="article:published_time" content="2015-11-28T09:55:43+00:00" />
+<meta property="article:modified_time" content="2015-11-28T09:55:43+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4"/>
+<meta name="twitter:description" content="In this blog post we will look at how to deploy a Nano Server instance using Windows Server Technical Preview 4.
+First of all there are two ways of deploying Nano Sever. First method is for deploying Nano Server on a VM and the Second method is for deploying Nano Server on a Physical machine. In this blog post, we will look at deploying Nano Server on a Physical machine."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG" rel="home">
+				<div class="logo__title">CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</div>
+				<div class="logo__tagline">This blog is about Public, Private, Hybrid Cloud Management &amp; Enterprise Device Management</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-11-28T09:55:43Z">28-11-2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/personal/" rel="category">Personal</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>In this blog post we will look at how to deploy a Nano Server instance using Windows Server Technical Preview 4.</p>
+<p>First of all there are two ways of deploying Nano Sever. First method is for deploying Nano Server on a VM and the Second method is for deploying Nano Server on a Physical machine. In this blog post, we will look at deploying Nano Server on a Physical machine.</p>
+<p><strong><!-- raw HTML omitted -->Step 01 – Copy Nano Server creation Files<!-- raw HTML omitted --></strong></p>
+<p>Create a folder to store Nano Server image</p>
+<p><img src="../wp-content/uploads/2015/11/image.png" alt=""></p>
+<p>Download and mount Windows Server 2016 Technical Preview 4 Media and then copy following files in to your local hard drive (paste them in the folder which you created in the above step)</p>
+<ol>
+<li>Convert-WindowsImage</li>
+<li>NanoServerImageGenerator</li>
+</ol>
+<p><img src="../wp-content/uploads/2015/11/snaghtml15ad454.png" alt=""></p>
+<p><strong><!-- raw HTML omitted -->Step 02 – Create Nano Server Image<!-- raw HTML omitted --></strong></p>
+<p>Run the following PowerShell Command to create the Nano Server Image. Open PowerShell as an Administrator and navigate to the folder which has above scripts copied.</p>
+<p>First import Nano Server Image Generator module by running the following command</p>
+<p><em>Import-Module .\NanoServerImageGenerator.psm1 –verbose</em></p>
+<p>Next step is to run the image creation command</p>
+<p><em>New-NanoServerImage -MediaPath f:\ -BasePath .\Base -TargetPath .\NanoServerHV03.vhd -ComputerName “S3-NN-01” -OEMDrivers -Compute -Storage -Defender -DomainName “nmt.com” -EnableRemoteManagementPort -Language EN-US</em></p>
+<p>Note – Don’t forget to replace MediaPath, TargetPath, ComputerName, DomainName according to your environment. Language needs to be set to EN-US. If your Server supports for UEFI Boot, you could also name the target file with VHDX extension.</p>
+<p>Provide local administrator password when prompted</p>
+<p><img src="../wp-content/uploads/2015/11/image1.png" alt=""></p>
+<p><img src="../wp-content/uploads/2015/11/image2.png" alt=""></p>
+<p>After about 15 minutes, this process should be completed. It could take longer due to injecting all OEM Drivers, which is an optional process. I didn’t have a driver pack for the server which i was building so I had to use the OEM driver pack which is a large OEM driver package which could take more time in building the image.</p>
+<p><img src="../wp-content/uploads/2015/11/image3.png" alt=""></p>
+<p>Verify that the image has been created on the designated folder.</p>
+<p><img src="../wp-content/uploads/2015/11/image4.png" alt=""></p>
+<p><strong><!-- raw HTML omitted -->Step 03 – Create &amp; Configure Boot Entry for booting Nano Server VHD<!-- raw HTML omitted --></strong></p>
+<p>Open command prompt as an “Administrator” and run the following commands</p>
+<p><strong><em>bcdedit /copy {current} /d “Nano Server”</em></strong></p>
+<p>Make note of the Boot Entry GUID that gets created</p>
+<p><img src="../wp-content/uploads/2015/11/image5.png" alt=""></p>
+<p>Next step is to run the following set of commands against the Nano Server boot entry which we just created. Replace Boot Entry GUID with your own, and also the location of the  VHD/VHDX file.</p>
+<ul>
+<li><strong>bcdedit /set {0141898c-3e9e-11e3-8aa8-9b1588913cd5} device vhd=[c:]\NanoServer\NanoServer.vhd</strong></li>
+<li><strong>bcdedit /set {0141898c-3e9e-11e3-8aa8-9b1588913cd5} osdevice vhd=[c:]\NanoServer\NanoServerHV03.vhd</strong></li>
+<li><strong>bcdedit /set {0141898c-3e9e-11e3-8aa8-9b1588913cd5} path \windows\system32\boot\winload.exe</strong></li>
+</ul>
+<p><img src="../wp-content/uploads/2015/11/image6.png" alt=""></p>
+<p>Next time when you restart your server, you will be prompted to select Nano Server Boot Option. If you need to we can also open System Configuration and set the Nano Server Boot record to be the default entry.</p>
+<p><img src="../wp-content/uploads/2015/11/image7.png" alt=""></p>
+<p>Based your boot records, you should see something similar when rebooting your server</p>
+<p><img src="../wp-content/uploads/2015/11/image8.png" alt=""></p>
+<p>Provide credentials to login to Nano Server. If you have not specified -DomainName option when creating the Nano Server image, Nano Server will not get added to your domain and you will have to login using local administrator credentials. In my environment, i have added my Nano Server to my lab domain environment, and i can login using my domain Administrator Account</p>
+<p><img src="../wp-content/uploads/2015/11/image17.png" alt=""></p>
+<p>After logging in to Nano Server, you will be able to see Nano Server Recovery Console which has information relating to your Server and also allows you to configure Firewall rules and networking. Note that we don’t have an option to run PowerShell commands locally, and the Nano Server instance needs to be managed Remotely using PowerShell Remoting or using Server Manager.</p>
+<p><img src="../wp-content/uploads/2015/11/snaghtml17c4be5.png" alt=""></p>
+<p><strong><!-- raw HTML omitted -->Step 04 – Connecting &amp; Configuring Nano Server<!-- raw HTML omitted --></strong></p>
+<p>Now that we have our Nano server up and running, lets have a look at some initial configuration that we can do on Nano Server. In order to do this, I’m going to open up Server Manager which is available on my local PC(Installed RSAT on my Windows 10 PC).</p>
+<p><img src="../wp-content/uploads/2015/11/image10.png" alt=""></p>
+<p>Add Nano Server Computers which are part of the Domain</p>
+<p><img src="../wp-content/uploads/2015/11/image11.png" alt=""></p>
+<p>Now that the servers are added to Server Manager, these servers can be remotely managed</p>
+<p><img src="../wp-content/uploads/2015/11/image12.png" alt=""></p>
+<p>All my VMs are hosted in my D Drive which is created with Storage Spaces and also it has Deduplication enabled. Since I’m going to access my D Drive from Nano Server and import these VMs I need to make sure that I enable Deduplication on my Nano Server.</p>
+<p>Click on Manager and select Add Roles and Features</p>
+<p><img src="../wp-content/uploads/2015/11/image13.png" alt=""></p>
+<p>Select File and iSCSI Services and select File Server and Data Deduplication</p>
+<p><img src="../wp-content/uploads/2015/11/image14.png" alt=""></p>
+<p><img src="../wp-content/uploads/2015/11/image15.png" alt=""></p>
+<p>After finishing the installation, Open Hyper-V Manager by selecting the Server and then right-click open Hyper-V Manager</p>
+<p><img src="../wp-content/uploads/2015/11/image16.png" alt=""></p>
+<p>Now we can remotely manage our Nano Server instance and Import my existing Hyper-V VMs</p>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+	</div>
+	<div class="authorbox__description">
+		Microsoft Cloud Solution Architect
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/" rel="prev">
+			<span class="post-nav__caption">«&thinsp;Previous</span>
+			<p class="post-nav__post-title">Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</p>
+		</a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/posts/2015-12-03-azure-portal-general-availability/" rel="next">
+			<span class="post-nav__caption">Next&thinsp;»</span>
+			<p class="post-nav__post-title">Azure Portal General Availability</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Nirmal Thewarathanthri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

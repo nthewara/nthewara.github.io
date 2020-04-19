@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Continue to use Windows Server Technical Preview 1 (OCT 2014) - CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Continue to use Windows Server Technical Preview 1 (OCT 2014)" />
+<meta property="og:description" content="In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.
+At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/)
+Checking on Windows Version (winver)
+Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/" />
+<meta property="article:published_time" content="2015-04-14T09:47:03+00:00" />
+<meta property="article:modified_time" content="2015-04-14T09:47:03+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Continue to use Windows Server Technical Preview 1 (OCT 2014)"/>
+<meta name="twitter:description" content="In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.
+At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/)
+Checking on Windows Version (winver)
+Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG" rel="home">
+				<div class="logo__title">CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</div>
+				<div class="logo__tagline">This blog is about Public, Private, Hybrid Cloud Management &amp; Enterprise Device Management</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Continue to use Windows Server Technical Preview 1 (OCT 2014)</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-04-14T09:47:03Z">14-04-2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/high-availability/" rel="category">High Availability</a>, <a class="meta__link" href="/categories/windows-server/" rel="category">Windows Server</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.</p>
+<p>At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this <a href="http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/" title="http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/">http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/</a>)</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image001.png" alt=""></p>
+<p>Checking on Windows Version (winver)</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image002.png" alt=""></p>
+<p>Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview.</p>
+<p>Hotfix can be obtained from link below</p>
+<p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=46447">http://www.microsoft.com/en-us/download/details.aspx?id=46447</a></p>
+<p>Once you obtain the fix, you can go ahead use the .msu package and apply the update. If it’s a Hyper-V Server or Server Core version then you cannot apply .msu package and the update needs to be applied using DISM command.</p>
+<p>Example : dism /online /add-package /packagepath:Windows6.4-KB3056022-x64.cab</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image003.png" alt=""></p>
+<p><img src="../wp-content/uploads/2015/04/clip_image004.png" alt=""></p>
+<p>Once it completes, it will request to reboot</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image005.png" alt=""></p>
+<p>After restarting, you will notice that you will not see the expiry warning message anymore after logging to the system. However if check Windows Version (WinVer), you will notice that it still says it’s set to expire on 16th April 2015. we need to have another reboot in order to fix this<!-- raw HTML omitted --></p>
+<p><img src="../wp-content/uploads/2015/04/clip_image006.jpg" alt=""></p>
+<p>If it’s still not updated and if you are also getting a message saying it’s going to expire on 15th April when logging in to Windows, following procedure needs to be followed. This is the case mostly for Physical Servers running Technical Preview. however for Virtual Machine you don’t need to follow below process, and just applying the hotfix will extend the evaluation version till 1st OCT 2015.</p>
+<p>Obtain a Windows Server Technical Preview Product Key</p>
+<p>Visit <a href="http://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-technical-preview">http://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-technical-preview</a> and navigate to Preinstall info. You will be able to locate Windows Server Technical Preview product key from this location</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image007.png" alt=""></p>
+<p>Open Server Manager and click on Local Server -&gt; Not Activated, which will open up “Activation Window”. First step is to provide the Product Key</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image008.png" alt=""></p>
+<p><img src="../wp-content/uploads/2015/04/clip_image009.png" alt=""></p>
+<p>Sometimes you will notice that the activation didn’t complete successfully. If that’s the case, you need to run slmgr /ato to activate the product.</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image010.png" alt=""></p>
+<p>Open PowerShell as an Administrator and run slmgr /ato</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image011.png" alt=""></p>
+<p>Make sure that there’s internet connectivity and within few seconds you will receive following message confirming that the product is now activated.</p>
+<p><img src="../wp-content/uploads/2015/04/clip_image012.png" alt=""></p>
+<p>Restart your Server Preview and you should not see expiry message anymore.</p>
+<p>I also created a step by step youtube video on how to apply the hotfix</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/continue-technical-preview/" rel="tag">Continue Technical Preview</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/technical-preview/" rel="tag">Technical Preview</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+	</div>
+	<div class="authorbox__description">
+		Microsoft Cloud Solution Architect
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/" rel="prev">
+			<span class="post-nav__caption">«&thinsp;Previous</span>
+			<p class="post-nav__post-title">This Build of Windows will expire soon &amp;#8211; (Windows Server Technical Preview)</p>
+		</a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/" rel="next">
+			<span class="post-nav__caption">Next&thinsp;»</span>
+			<p class="post-nav__post-title">Service Manager 2012 R2 with SQL 2014</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Nirmal Thewarathanthri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TechnicalPreview4 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/technicalpreview4/</link>
+    <description>Recent content in TechnicalPreview4 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2015 14:59:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/technicalpreview4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</guid>
+      <description> Nano Server (DNS Server / IIS Server roles and also previously included scale out File Server &amp;amp; Hyper-V Role) Windows Containers Site-Aware Failover Cluster, Workgroup and Multi-domain Clusters Hyper-V Virtual Machine Resiliency Cloud Witness Cloud Operating System Rolling Upgrade Storage Spaces Direct Storage Replica   </description>
+    </item>
+    
+  </channel>
+</rss>

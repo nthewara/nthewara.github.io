@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Continue Technical Preview on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/continue-technical-preview/</link>
+    <description>Recent content in Continue Technical Preview on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Apr 2015 09:47:03 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/continue-technical-preview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Continue to use Windows Server Technical Preview 1 (OCT 2014)</title>
+      <link>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</link>
+      <pubDate>Tue, 14 Apr 2015 09:47:03 +0000</pubDate>
+      
+      <guid>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</guid>
+      <description>In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.
+At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/)
+Checking on Windows Version (winver)
+Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview.</description>
+    </item>
+    
+  </channel>
+</rss>

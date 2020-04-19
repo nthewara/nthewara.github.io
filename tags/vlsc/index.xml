@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VLSC on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/vlsc/</link>
+    <description>Recent content in VLSC on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Apr 2014 06:23:54 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vlsc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Updated Windows Server / Windows Client Media Now Available</title>
+      <link>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</guid>
+      <description>Microsoft has released updated Media files containing Windows Server 2012 R2 / Windows 8.1 Client Update on Volume License Service Center. This new media kit is recommended to be used for any future deployments since it contains all security fixes since RTM.
+Updated ISO files can be obtained from following sources
+ MSDN (For Evaluation) TECHNET (For Evaluation) Volume Licensing Service Center (Enterprise Deployment)  more details please visit
+http://blogs.technet.com/b/windowsserver/archive/2014/04/14/updated-volume-license-media-available-today-for-windows-server-2012-r2-update.aspx</description>
+    </item>
+    
+  </channel>
+</rss>

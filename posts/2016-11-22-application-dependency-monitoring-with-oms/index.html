@@ -10,7 +10,6 @@
 	<meta property="og:title" content="Application Dependency Monitoring with OMS" />
 <meta property="og:description" content="Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/2016-11-22-application-dependency-monitoring-with-oms/" />
@@ -21,7 +20,6 @@ We can also see Windows Updates on each of the dependent servers" />
 <meta name="twitter:title" content="Application Dependency Monitoring with OMS"/>
 <meta name="twitter:description" content="Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -67,24 +65,24 @@ We can also see Windows Updates on each of the dependent servers"/>
 <div class="content post__content clearfix">
 			<p>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp; Update Solutions.</p>
 <p>Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image002.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image002.png" alt=""></p>
 <p><!-- raw HTML omitted --></p>
 <p>We can also see Windows Updates on each of the dependent servers</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image004.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image004.png" alt=""></p>
 <p>Performance data is also visible within the Service Map</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image006.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image006.png" alt=""></p>
 <p>Change Tracking Solution is also integrated with Service Maps, which shows Service changes on dependent systems.</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image008.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image008.png" alt=""></p>
 <p>Malware Security solution also integrates with Service Maps, similar to other solutions</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image012.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image012.png" alt=""></p>
 <p>Let’s have a look at how we can set it up.</p>
 <p>The first step is to have the OMS Agent installed either manually deployed / installed using other deployment tools (such as using SCOM / Config Manager or scripts). Service Maps also requires a dependency agent which needs to be installed on each server. We can download this agent by accessing Service Map solution configuration.</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image018.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image018.png" alt=""></p>
 <p>Download the agent and install it on Application Servers</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image019.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2016/11/clip_image020.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image019.png" alt=""></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image020.png" alt=""></p>
 <p>Once the installation completes, within few minutes you will notice that the OMS Agent and Dependency Map agent reports back with Application dependencies.</p>
-<p><a href="../wp-content/uploads/2016/11/clip_image022.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2016/11/clip_image022.png" alt=""></p>
 <p>More info : <a href="https://blogs.technet.microsoft.com/hybridcloud/2016/11/21/introducing-service-map-for-dependency-aware-monitoring-troubleshooting-and-workload-migrations/">https://blogs.technet.microsoft.com/hybridcloud/2016/11/21/introducing-service-map-for-dependency-aware-monitoring-troubleshooting-and-workload-migrations/</a></p>
 
 		</div>

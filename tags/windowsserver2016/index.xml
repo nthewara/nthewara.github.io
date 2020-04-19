@@ -21,5 +21,14 @@
 Let’s have a look at the new patch management process using Server Management Tools.</description>
     </item>
     
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</guid>
+      <description> Nano Server (DNS Server / IIS Server roles and also previously included scale out File Server &amp;amp; Hyper-V Role) Windows Containers Site-Aware Failover Cluster, Workgroup and Multi-domain Clusters Hyper-V Virtual Machine Resiliency Cloud Witness Cloud Operating System Rolling Upgrade Storage Spaces Direct Storage Replica   </description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/microsoft/</link>
+    <description>Recent content in Microsoft on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Aug 2015 20:52:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wire Data Analysis with Operations Management Suite</title>
+      <link>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</guid>
+      <description>Wire Data Analysis capability was made available to Operations Management Suite (OMS) recently, and i had a quick look at it today.
+This solution provides network traffic analysis using existing OMS Agent for Windows 2012 R2 servers, Windows 8.1 clients and newer operating systems. To enable this functionality, all we need to do is to navigate to Solutions Gallery, Select Wire Data and click Add. Once you click add, OMS Agent will start collecting information and push them back to OMS Service.</description>
+    </item>
+    
+  </channel>
+</rss>

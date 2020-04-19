@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build Expire on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/build-expire/</link>
+    <description>Recent content in Build Expire on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Apr 2015 08:15:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/build-expire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This Build of Windows will expire soon &amp;#8211; (Windows Server Technical Preview)</title>
+      <link>/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/</link>
+      <pubDate>Sat, 04 Apr 2015 08:15:32 +0000</pubDate>
+      
+      <guid>/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/</guid>
+      <description>UPDATE : Hotfix is now available and for more details please have a look at my blog http://nirmalt.com/2015/04/14/continue-to-use-windows-server-technical-preview-1-oct-2014
+If you are running Windows Server Preview (Technical Preview 1 Released in 1stOct 2014), you might have already realized that it’s set to expire on 15thApril.
+While Microsoft is preparing to release Technical Preview 2 sometime in May, we will need to look for an alternative to continue using Windows Server Preview build.</description>
+    </item>
+    
+  </channel>
+</rss>

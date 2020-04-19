@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2012 R2 Update on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/2012-r2-update/</link>
+    <description>Recent content in 2012 R2 Update on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2014 15:58:09 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/2012-r2-update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Server 2012 R2 Update</title>
+      <link>/posts/2014-04-14-windows-server-2012-r2-update/</link>
+      <pubDate>Mon, 14 Apr 2014 15:58:09 +0000</pubDate>
+      
+      <guid>/posts/2014-04-14-windows-server-2012-r2-update/</guid>
+      <description>Microsoft recently released a consolidated update package for Windows Server 2012 R2 and Windows 8.1 Client. this is the new service baseline for Windows Server 2012 R2 systems and it can be either downloaded using Microsoft Download Center or using Windows Update. Microsoft earlier released this update to Microsoft MSDN/TechNet Subscribers and today it will be made available to Volume License customers as an updated Windows Server 2012 R2 ISO media.</description>
+    </item>
+    
+  </channel>
+</rss>

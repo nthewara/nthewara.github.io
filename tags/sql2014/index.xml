@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL2014 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/sql2014/</link>
+    <description>Recent content in SQL2014 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jun 2015 15:13:20 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sql2014/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Service Manager 2012 R2 with SQL 2014</title>
+      <link>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</guid>
+      <description>Microsoft announced support for SQL 2014 with Update Rollup 6 for System Center Service Manager 2012 R2. While working on a recent project, I wanted to explore the possibility of building a fresh instance of Service Manager 2012 R2 with SQL 2014.
+Since UR 6 update is not slipstreamed in to System Center Service Manager R2 Media, if you try to install it against a SQL 2014 Server, you will not be able to proceed ahead with the install.</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2014 General Availability</title>
+      <link>/posts/2014-04-02-sql-server-2014-general-availability/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/posts/2014-04-02-sql-server-2014-general-availability/</guid>
+      <description>Today morning, Microsoft announced general availability for next major release of Microsoft SQL Server product which is called “SQL Server 2014”.
+I have listed below some of the key highlights of SQL Server 2014 release
+  Up to 30x In-Memory OLTP performance gains New Cloud Migration Wizard Clustered Columnstore indexes  –
+ please find below official announcement from Microsoft SQL Product team blog
+http://blogs.technet.com/b/dataplatforminsider/archive/2014/04/01/sql-server-2014-now-generally-available.aspx
+SQL Server 2014 Datasheet</description>
+    </item>
+    
+  </channel>
+</rss>

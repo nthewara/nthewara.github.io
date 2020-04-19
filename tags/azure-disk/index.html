@@ -59,7 +59,8 @@
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		&lt;p&gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR). &lt;/p&gt; &lt;p&gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.
+		Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR).
 	</div>
 </article>
 </main>
@@ -105,10 +106,19 @@
 				<a class="widget__link" href="/categories/mvp/">MVP</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/office/">Office</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/oms/">OMS</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/other/">Other</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/personal/">Personal</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/software/">Software</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/sql/">SQL</a>
@@ -123,6 +133,9 @@
 				<a class="widget__link" href="/categories/virtualization/">Virtualization</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/windows-client/">Windows Client</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/windows-server/">Windows Server</a>
 			</li>
 		</ul>
@@ -131,6 +144,8 @@
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/2012-r2-update/" title="2012 R2 Update">2012 R2 Update</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/2014/" title="2014">2014</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/4tb/" title="4TB">4TB</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/9.7/" title="9.7">9.7</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/app/" title="App">App</a>
@@ -140,9 +155,23 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/azure-disk/" title="Azure Disk">Azure Disk</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/azure-iaas/" title="Azure IaaS">Azure IaaS</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/azure-licensing/" title="Azure licensing">Azure licensing</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azure-portal/" title="Azure Portal">Azure Portal</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/azure-vm/" title="Azure VM">Azure VM</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azurecon/" title="AzureCon">AzureCon</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azurecon2015/" title="AzureCon2015">AzureCon2015</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azureportal/" title="AzurePortal">AzurePortal</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/azureservermanagementws2016windowsserver/" title="Azure;ServerManagement;WS2016;Windows;Server">Azure;ServerManagement;WS2016;Windows;Server</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/build-expire/" title="Build Expire">Build Expire</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cloud/" title="Cloud">Cloud</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cloud-witness/" title="Cloud Witness">Cloud Witness</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cloudampdatacenter/" title="Cloud&amp;amp;Datacenter">Cloud&amp;amp;Datacenter</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/clustering/" title="Clustering">Clustering</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/continue-technical-preview/" title="Continue Technical Preview">Continue Technical Preview</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/datacenter/" title="Datacenter">Datacenter</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/datacenter-management/" title="Datacenter Management">Datacenter Management</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/dw/" title="dw">dw</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/expire/" title="Expire">Expire</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/extendeddisk/" title="ExtendedDisk">ExtendedDisk</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hub/" title="HUB">HUB</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hybrid-use-benefit/" title="Hybrid Use Benefit">Hybrid Use Benefit</a>
@@ -150,22 +179,68 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/import/" title="Import">Import</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/managed-disks/" title="Managed Disks">Managed Disks</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/management/" title="MAnagement">MAnagement</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/microsoft/" title="Microsoft">Microsoft</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/microsoft-operations-management-suite/" title="Microsoft Operations Management Suite">Microsoft Operations Management Suite</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monitoring/" title="Monitoring">Monitoring</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/msft/" title="MSFT">MSFT</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/msoms/" title="MSOMS">MSOMS</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/nano/" title="Nano">Nano</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/nano-server/" title="Nano Server">Nano Server</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/nanoserver/" title="NanoServer">NanoServer</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/oltp/" title="OLTP">OLTP</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/opsinsights/" title="OpsInsights">OpsInsights</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/outlook2013/" title="Outlook2013">Outlook2013</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powershell/" title="Powershell">Powershell</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/release-preview/" title="Release Preview">Release Preview</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rtm/" title="RTM">RTM</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/s2d/" title="S2D">S2D</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scom/" title="scom">scom</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scsm/" title="SCSM">SCSM</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scsm2012r2/" title="SCSM2012R2">SCSM2012R2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/server/" title="Server">Server</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/server-vnext/" title="Server vNext">Server vNext</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/server2012/" title="Server2012">Server2012</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/server2012r2/" title="Server2012R2">Server2012R2</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/servermanagement/" title="ServerManagement">ServerManagement</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/service-manager/" title="Service Manager">Service Manager</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sign-in-issues/" title="Sign-in Issues">Sign-in Issues</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/skype/" title="Skype">Skype</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sla/" title="SLA">SLA</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/software-assurance/" title="software assurance">software assurance</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sp1/" title="SP1">SP1</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sql/" title="sql">sql</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sql-fci/" title="SQL FCI">SQL FCI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sql2014/" title="SQL2014">SQL2014</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sqlserver/" title="SQLServer">SQLServer</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storagespaces/" title="StorageSpaces">StorageSpaces</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storagespacesdirect/" title="StorageSpacesDirect">StorageSpacesDirect</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/systemcenter2012r2/" title="SystemCenter2012R2">SystemCenter2012R2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/systemcenter2016/" title="SystemCenter2016">SystemCenter2016</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/technical-preview/" title="Technical Preview">Technical Preview</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/technicalpreview4/" title="TechnicalPreview4">TechnicalPreview4</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tp4/" title="TP4">TP4</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/tp5/" title="TP5">TP5</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/virtual-machine/" title="Virtual machine">Virtual machine</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vlsc/" title="VLSC">VLSC</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vmm2012/" title="vmm2012">vmm2012</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vmm2012winrm/" title="vmm2012;WinRM">vmm2012;WinRM</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vmware/" title="Vmware">Vmware</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows/" title="Windows">Windows</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows-8/" title="Windows 8">Windows 8</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows-server-update/" title="Windows Server Update">Windows Server Update</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows.old/" title="Windows.old">Windows.old</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows10/" title="Windows10">Windows10</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows8/" title="Windows8">Windows8</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/windowsserver/" title="WindowsServer">WindowsServer</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windowsserver2012r2/" title="WindowsServer2012R2">WindowsServer2012R2</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/windowsserver2016/" title="WindowsServer2016">WindowsServer2016</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/winserver/" title="WinServer">WinServer</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wiredata/" title="WireData">WireData</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ws12r2/" title="WS12R2">WS12R2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ws2012/" title="WS2012">WS2012</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ws2012r2/" title="WS2012R2">WS2012R2</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wssc/" title="WSSC">WSSC</a>
 	</div>
 </div>
 <div class="widget-social widget">

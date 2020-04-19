@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server2012R2 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/server2012r2/</link>
+    <description>Recent content in Server2012R2 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Jun 2013 22:54:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/server2012r2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remove Windows.old after using in-place upgrade method on Windows Server 2012 R2 Preview</title>
+      <link>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</link>
+      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
+      
+      <guid>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</guid>
+      <description>After obtaining Windows Server 2012 R2 Preview, I thought of upgrading my lab environment. Upon completing Server 2012 R2 Preview upgrade, I noticed that there’s a Windows.old folder in my System drive which takes around 20GB of space.
+now that I have already upgraded in to Server 2012 R2 Preview and confirmed that all my applications / file are available, I decided to delete Windows.old folder.
+Best way to do this, is to use Disk Cleanup Tool.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RTM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/rtm/</link>
+    <description>Recent content in RTM on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Sep 2013 11:20:46 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rtm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 8.1 / Server 2012 R2 RTM Now Available on MSDN &amp;#038; TECHNET</title>
+      <link>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</guid>
+      <description>Microsoft announced yesterday that they will be making Windows 8.1 RTM / Windows Server 2012 RTM &amp;amp; Visual Studio 2013 RC made available for developer community based on feedback received. This was a slight deviation from previous communication when both products hit internal RTM milestone. however I’m extremely pleased for being able to obtain RTM bits for both Windows Client &amp;amp; Windows Server prior to GA milestone which is 18th October.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -71,7 +71,7 @@ Utilizing Guest clusters in Azure enables mission critical application such as a
 </ul>
 <p>In this blog post, we will be looking at SQL Server 2016 Failover Cluster Instance deployment in Azure utilizing resource manager deployment templates available on Github.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Deployment Architecture<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0021.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0021.jpg" alt=""></p>
 <p>Template Link = <a href="https://aka.ms/azure-sql-server-alwayson-fci-cluster">https://aka.ms/azure-sql-server-alwayson-fci-cluster</a></p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Requirements<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <ul>
@@ -85,10 +85,10 @@ Utilizing Guest clusters in Azure enables mission critical application such as a
 <p> </p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Step by Step deployment for SQL 2016 Failover Cluster in Azure using Azure Resource Manager Template<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>Step 01 –</strong> Use template link below and open it up in a browser</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0041.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0041.png" alt=""></p>
 <p><strong>Step 02 –</strong> click on “Deploy to Azure” which will load this template into a custom template deployment within azure</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0061.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0081.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0061.png" alt=""></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0081.png" alt=""></p>
 <p><strong>Step 03 –</strong> Fill in required parameters and hit deploy.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->Basic Section<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <ul>
@@ -117,38 +117,38 @@ Utilizing Guest clusters in Azure enables mission critical application such as a
 </ul>
 <p><strong>Step 04 –</strong> Accept custom template, terms and conditions and select “I Agree to the terms &amp; conditions after reading through”. Next click on Purchase, which will initiate the deployment process.</p>
 <p><strong>Step 05 –</strong> click notifications and select the deployment to check the progress of the build.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0091.png"><!-- raw HTML omitted --></a></p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0111.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0091.png" alt=""></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0111.png" alt=""></p>
 <p>Clicking on the resource “DeploySFCICluster”, you will be able to see individual component status</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0131.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0131.png" alt=""></p>
 <p>Deployment should take around 45 – 1 hour to complete.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0151.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0151.png" alt=""></p>
 <p>once completed, you will see completed notification as below.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0161.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0161.png" alt=""></p>
 <p><strong>Step 06 –</strong> get local IP address of the VM and connect using remote desktop</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0171.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0171.png" alt=""></p>
 <p><strong>Step 07 –</strong> Open Failover Cluster Manager (Start menu -&gt; Windows Administrative Tools -&gt; Failover Cluster Manager). Looking at the screenshot below, we can validate that the cluster was successfully created.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0191.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0191.png" alt=""></p>
 <p>Next, we will go ahead and validate cluster roles to make sure that the SQL failover cluster installation is a success.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0211.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0211.png" alt=""></p>
 <p>Next, we can navigate to Storage section within Failover Cluster Manager and verify Storage Spaces Direct configuration.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0231.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0231.png" alt=""></p>
 <p>Storage Pool Summary</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0251.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0251.png" alt=""></p>
 <p>Physical Disks</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0271.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0271.png" alt=""></p>
 <p>Cluster summary</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0291.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0291.png" alt=""></p>
 <p><strong>Step 08 –</strong> Open Microsoft SQL Server Management Studio (Star Menu -&gt; Microsoft SQL Server 2016 -&gt; Microsoft SQL Server Management Studio).</p>
 <p>Login to SQL Failover Cluster Name</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0301.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0301.png" alt=""></p>
 <p>After you confirm that you can log in – create a sample database. Failover SQL resources to confirm that the services can failover to the other available node.</p>
 <p>Select SQL Server Role and right click -&gt; Move -&gt; Select Node</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0311.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0311.png" alt=""></p>
 <p>Select the other available instance</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0321.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0321.png" alt=""></p>
 <p>And click “OK”. After few seconds, services should start on the failover instance.</p>
-<p><a href="../wp-content/uploads/2017/02/clip_image0341.png"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/02/clip_image0341.png" alt=""></p>
 <p>This blog post details, how to create a SQL Server 2016 Failover Cluster Instance in Azure using Windows Server 2016 Storage Spaces Direct. Please have a look at reference links below for more information. Any queries, please feel free to comment below or reach out to me via twitter (@nirmalmt)</p>
 <p><!-- raw HTML omitted --><a href="https://blogs.msdn.microsoft.com/clustering/2017/02/14/deploying-an-iaas-vm-guest-clusters-in-microsoft-azure">https://blogs.msdn.microsoft.com/clustering/2017/02/14/deploying-an-iaas-vm-guest-clusters-in-microsoft-azure</a><!-- raw HTML omitted --></p>
 <p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster#step-2-configure-the-windows-server-failover-cluster-wsfc-with-s2d">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster#step-2-configure-the-windows-server-failover-cluster-wsfc-with-s2d</a></p>

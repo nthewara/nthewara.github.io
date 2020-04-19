@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MSFT on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/msft/</link>
+    <description>Recent content in MSFT on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 2015 03:58:18 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/msft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Azure Announcements at AzureCon 2015</title>
+      <link>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</guid>
+      <description>Quick post to summerize some of the new Azure Announcements at AzureCON 2015 event.
+– 3 New Azure Datacentres Announced (3 in India), with this Microsoft has more datacentre than Google and AWS combined(24 Regions around the world)
+– New N-Series VMs which has GPU Capabilities– for graphics-intensive workloads
+– New next generation D Series Virtual Machines (DV2 – 35% Faster than D series VMs)
+– Azure Security Centre Announced – to be made available later this year</description>
+    </item>
+    
+  </channel>
+</rss>

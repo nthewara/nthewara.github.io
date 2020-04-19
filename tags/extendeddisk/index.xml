@@ -17,7 +17,8 @@
       <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
       
       <guid>/posts/2017-06-18-4tb-disk-support-for-azure/</guid>
-      <description>&amp;lt;p&amp;gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR). &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.</description>
+      <description>Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR).</description>
     </item>
     
   </channel>

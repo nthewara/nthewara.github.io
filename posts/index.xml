@@ -26,7 +26,8 @@
       <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
       
       <guid>/posts/2017-06-18-4tb-disk-support-for-azure/</guid>
-      <description>&amp;lt;p&amp;gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR). &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.</description>
+      <description>Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR).</description>
     </item>
     
     <item>
@@ -66,7 +67,6 @@ A recent announcement from Microsoft states that they now support for Single In
       <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
       <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers</description>
     </item>
     
@@ -163,6 +163,370 @@ First Step involved in setting up Server Management Tools is for us to create a 
       <description>Microsoft recently released Azure Server Management Tools preview for web-based management tools for Windows Server 2016 Technical Preview running on-premises as well as in Azure.
 Currently, Server Management Tools offer the following capabilities:
  View and change system configuration View performance across various resources and manage processes and services Manage devices attached to the server View event logs View the list of installed roles and features Use a PowerShell console to manage and automate  Having server management tools available in Azure gives me the flexibility to manage my on-premises Windows Server 2016 servers and also Azure Windows Server 2016 Servers using a single portal.</description>
+    </item>
+    
+    <item>
+      <title>Azure Portal General Availability</title>
+      <link>/posts/2015-12-03-azure-portal-general-availability/</link>
+      <pubDate>Thu, 03 Dec 2015 12:04:37 +0000</pubDate>
+      
+      <guid>/posts/2015-12-03-azure-portal-general-availability/</guid>
+      <description>Today morning Microsoft announced general availability for Azure Preview Portal (portal.azure.com). Logging in to the old portal(Manage.windowsazure.com), we can now see a new banner that allows you to click and re-direct to the new Azure Portal.
+https://azure.microsoft.com/en-us/blog/announcing-azure-portal-general-availability/</description>
+    </item>
+    
+    <item>
+      <title>Installing Nano Server on a Physical Machine using Windows Server 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-28-installing-nano-servertechnical-preview-4/</link>
+      <pubDate>Sat, 28 Nov 2015 09:55:43 +0000</pubDate>
+      
+      <guid>/posts/2015-11-28-installing-nano-servertechnical-preview-4/</guid>
+      <description>In this blog post we will look at how to deploy a Nano Server instance using Windows Server Technical Preview 4.
+First of all there are two ways of deploying Nano Sever. First method is for deploying Nano Server on a VM and the Second method is for deploying Nano Server on a Physical machine. In this blog post, we will look at deploying Nano Server on a Physical machine.</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2016 &amp;#038; System Center 2016 Technical Preview 4</title>
+      <link>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</guid>
+      <description> Nano Server (DNS Server / IIS Server roles and also previously included scale out File Server &amp;amp; Hyper-V Role) Windows Containers Site-Aware Failover Cluster, Workgroup and Multi-domain Clusters Hyper-V Virtual Machine Resiliency Cloud Witness Cloud Operating System Rolling Upgrade Storage Spaces Direct Storage Replica   </description>
+    </item>
+    
+    <item>
+      <title>Azure Announcements at AzureCon 2015</title>
+      <link>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</guid>
+      <description>Quick post to summerize some of the new Azure Announcements at AzureCON 2015 event.
+– 3 New Azure Datacentres Announced (3 in India), with this Microsoft has more datacentre than Google and AWS combined(24 Regions around the world)
+– New N-Series VMs which has GPU Capabilities– for graphics-intensive workloads
+– New next generation D Series Virtual Machines (DV2 – 35% Faster than D series VMs)
+– Azure Security Centre Announced – to be made available later this year</description>
+    </item>
+    
+    <item>
+      <title>Wire Data Analysis with Operations Management Suite</title>
+      <link>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</guid>
+      <description>Wire Data Analysis capability was made available to Operations Management Suite (OMS) recently, and i had a quick look at it today.
+This solution provides network traffic analysis using existing OMS Agent for Windows 2012 R2 servers, Windows 8.1 clients and newer operating systems. To enable this functionality, all we need to do is to navigate to Solutions Gallery, Select Wire Data and click Add. Once you click add, OMS Agent will start collecting information and push them back to OMS Service.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 R2 with SQL 2014</title>
+      <link>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</guid>
+      <description>Microsoft announced support for SQL 2014 with Update Rollup 6 for System Center Service Manager 2012 R2. While working on a recent project, I wanted to explore the possibility of building a fresh instance of Service Manager 2012 R2 with SQL 2014.
+Since UR 6 update is not slipstreamed in to System Center Service Manager R2 Media, if you try to install it against a SQL 2014 Server, you will not be able to proceed ahead with the install.</description>
+    </item>
+    
+    <item>
+      <title>Continue to use Windows Server Technical Preview 1 (OCT 2014)</title>
+      <link>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</link>
+      <pubDate>Tue, 14 Apr 2015 09:47:03 +0000</pubDate>
+      
+      <guid>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</guid>
+      <description>In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.
+At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/)
+Checking on Windows Version (winver)
+Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview.</description>
+    </item>
+    
+    <item>
+      <title>This Build of Windows will expire soon &amp;#8211; (Windows Server Technical Preview)</title>
+      <link>/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/</link>
+      <pubDate>Sat, 04 Apr 2015 08:15:32 +0000</pubDate>
+      
+      <guid>/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/</guid>
+      <description>UPDATE : Hotfix is now available and for more details please have a look at my blog http://nirmalt.com/2015/04/14/continue-to-use-windows-server-technical-preview-1-oct-2014
+If you are running Windows Server Preview (Technical Preview 1 Released in 1stOct 2014), you might have already realized that it’s set to expire on 15thApril.
+While Microsoft is preparing to release Technical Preview 2 sometime in May, we will need to look for an alternative to continue using Windows Server Preview build.</description>
+    </item>
+    
+    <item>
+      <title>Updating Configuration Manager Client Package with Client Agent Hotfixes</title>
+      <link>/posts/2015-02-10-updating-configuration-manager-client-package-with-client-agent-hotfixes/</link>
+      <pubDate>Tue, 10 Feb 2015 07:38:10 +0000</pubDate>
+      
+      <guid>/posts/2015-02-10-updating-configuration-manager-client-package-with-client-agent-hotfixes/</guid>
+      <description>This is a quick post, to detail how we can install Configuration Manager client updates as a part of Client Deployment within Configuration Manager 2012 R2. There are multiple ways to achieve this task and the below explained method would be the easiest to configure.
+Problem: Due to multiple Cumulative updates for Configuration Manager 2012 R2, it’s required for us to update all Configuration Manager Clients and also any new machines that gets built will also need to be applied with client update package</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Preview–January Build Now Available (9926)</title>
+      <link>/posts/2015-01-24-windows-10-previewjanuary-build-now-available-9926/</link>
+      <pubDate>Sat, 24 Jan 2015 08:31:18 +0000</pubDate>
+      
+      <guid>/posts/2015-01-24-windows-10-previewjanuary-build-now-available-9926/</guid>
+      <description>Microsoft has just released latest preview build for Windows 10 which is known as the January Build or Technical Preview 2. This release contains build version 9926. Latest build comes with Cortana and XBOX features which were demonstrated few days back at the Public event held by Microsoft.
+In order to obtain this build, you need to either be a Windows Insider (join for free https://insider.windows.com) or it’s possible to download from MSDN Subscription.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Witness in Windows Server vNext Technical Preview (2014-OCT)</title>
+      <link>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</link>
+      <pubDate>Sat, 06 Dec 2014 17:47:00 +0000</pubDate>
+      
+      <guid>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</guid>
+      <description>In this blog post, we will look at configuring Cloud Witness, a new quorum option introduced in Windows Server vNext Technical Preview (OCT 2014 Release). Cloud witness was introduced as an option similar to a File Share Witness, but hosted on Azure without having to maintain any infrastructure within your datacenter. This allows us to have multi-site clusters without having the need to have a 3rd site as a witness.</description>
+    </item>
+    
+    <item>
+      <title>Announcing Windows 10</title>
+      <link>/posts/2014-10-01-announcing-windows-10/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/posts/2014-10-01-announcing-windows-10/</guid>
+      <description>Earlier today Microsoft announced Windows 10, next version of the client Operating System. Following the announcement today, Technical Preview to be available on 1stOctober (US Date &amp;amp; Time), which will be available for us later tonight or early tomorrow.
+Microsoft is also introducing Windows Insider Program, which allows a user to download Windows 10 Technical Preview and also provide feedback to Microsoft.
+Official Announcement -&amp;gt; http://blogs.windows.com/bloggingwindows/2014/09/30/announcing-windows-10/
+Windows Insider Program -&amp;gt; http://preview.</description>
+    </item>
+    
+    <item>
+      <title>VMM 2012 R2 Error–Hardware Management error has occurred trying to contact server</title>
+      <link>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</link>
+      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
+      
+      <guid>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</guid>
+      <description>In this blog post i will be discussing regarding an issue which i have faced recently on System Center Virtual Machine Manager 2012 R2. In one of my recent projects, I had to setup two VMM 2012 R2 instances to configure Azure Site Recovery, for a Datacenter Failover simulation. While installing VMM 2012 R2, I noticed that my installation failed with a WinRM issue.
+Quickly investigating this issue, I have checked my firewall settings and WinRM configuration</description>
+    </item>
+    
+    <item>
+      <title>TECH2014 Houston Sessions by Cluster Team</title>
+      <link>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</guid>
+      <description>Cluster Product group presented multiple sessions at TECH2014 which took place in Houston from 12th to 15th May 2014. please find below list of sessions which were presented at the event.
+1) ****DCIM-B354 Failover Clustering: What’s New in Windows Server 2012 R2
+2) ****DCIM-B364 Step-by-Step to Deploying Microsoft SQL Server 2014 with Cluster Shared Volumes
+3) ****DCIM-B349 Software-Defined Storage in Windows Server 2012 R2 and Microsoft System Center 2012 R2</description>
+    </item>
+    
+    <item>
+      <title>Updated Windows Server / Windows Client Media Now Available</title>
+      <link>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</guid>
+      <description>Microsoft has released updated Media files containing Windows Server 2012 R2 / Windows 8.1 Client Update on Volume License Service Center. This new media kit is recommended to be used for any future deployments since it contains all security fixes since RTM.
+Updated ISO files can be obtained from following sources
+ MSDN (For Evaluation) TECHNET (For Evaluation) Volume Licensing Service Center (Enterprise Deployment)  more details please visit
+http://blogs.technet.com/b/windowsserver/archive/2014/04/14/updated-volume-license-media-available-today-for-windows-server-2012-r2-update.aspx</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012 R2 Update</title>
+      <link>/posts/2014-04-14-windows-server-2012-r2-update/</link>
+      <pubDate>Mon, 14 Apr 2014 15:58:09 +0000</pubDate>
+      
+      <guid>/posts/2014-04-14-windows-server-2012-r2-update/</guid>
+      <description>Microsoft recently released a consolidated update package for Windows Server 2012 R2 and Windows 8.1 Client. this is the new service baseline for Windows Server 2012 R2 systems and it can be either downloaded using Microsoft Download Center or using Windows Update. Microsoft earlier released this update to Microsoft MSDN/TechNet Subscribers and today it will be made available to Volume License customers as an updated Windows Server 2012 R2 ISO media.</description>
+    </item>
+    
+    <item>
+      <title>SQL Server 2014 General Availability</title>
+      <link>/posts/2014-04-02-sql-server-2014-general-availability/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/posts/2014-04-02-sql-server-2014-general-availability/</guid>
+      <description>Today morning, Microsoft announced general availability for next major release of Microsoft SQL Server product which is called “SQL Server 2014”.
+I have listed below some of the key highlights of SQL Server 2014 release
+  Up to 30x In-Memory OLTP performance gains New Cloud Migration Wizard Clustered Columnstore indexes  –
+ please find below official announcement from Microsoft SQL Product team blog
+http://blogs.technet.com/b/dataplatforminsider/archive/2014/04/01/sql-server-2014-now-generally-available.aspx
+SQL Server 2014 Datasheet</description>
+    </item>
+    
+    <item>
+      <title>Step by Step–Two Node File Server Cluster (Part 01)</title>
+      <link>/posts/2013-11-20-step-by-steptwo-node-file-server-cluster-part-01/</link>
+      <pubDate>Wed, 20 Nov 2013 04:33:00 +0000</pubDate>
+      
+      <guid>/posts/2013-11-20-step-by-steptwo-node-file-server-cluster-part-01/</guid>
+      <description>In this blog post, we will look at creating a Two Node File Server Cluster
+Step 01 – Prepare your storage and Networks. In this demonstration I’m using Two Windows Server 2012 R2 Virtual Machines. I have two networks on each VM. One network for client communication and the other for cluster communication. I’m using iSCSI shared storage for this environment.
+Step 02 – Next step would be for us to install Failover Cluster Features on both nodes.</description>
+    </item>
+    
+    <item>
+      <title>MSFT_PartitionToVolume Internal Error</title>
+      <link>/posts/2013-09-17-msft_partitiontovolume-internal-error/</link>
+      <pubDate>Tue, 17 Sep 2013 06:34:32 +0000</pubDate>
+      
+      <guid>/posts/2013-09-17-msft_partitiontovolume-internal-error/</guid>
+      <description>while using VMM 2012 R2 Preview Version in my LAB environment, i noticed that i was getting errors from one of the hosts that i was managing as a Hyper-V Host.
+I found out that this issue is caused by having a SD Card in the system and VMM fails saying that it cannot communicate with my Host anymore. after removing SD Card, i was able to get VMM to work without any issues and my Hosts are responding back again.</description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 / Server 2012 R2 RTM Now Available on MSDN &amp;#038; TECHNET</title>
+      <link>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</guid>
+      <description>Microsoft announced yesterday that they will be making Windows 8.1 RTM / Windows Server 2012 RTM &amp;amp; Visual Studio 2013 RC made available for developer community based on feedback received. This was a slight deviation from previous communication when both products hit internal RTM milestone. however I’m extremely pleased for being able to obtain RTM bits for both Windows Client &amp;amp; Windows Server prior to GA milestone which is 18th October.</description>
+    </item>
+    
+    <item>
+      <title>How to add a disk to a Cluster</title>
+      <link>/posts/2013-07-30-how-to-add-a-disk-to-a-cluster/</link>
+      <pubDate>Tue, 30 Jul 2013 04:01:00 +0000</pubDate>
+      
+      <guid>/posts/2013-07-30-how-to-add-a-disk-to-a-cluster/</guid>
+      <description>In this post we will look at how we can add a disk resource to a cluster and also how to convert a disk in to a CSV (Cluster Shared Volume) storage.
+first step is to have eligible storage available within the cluster. storage could be, any shared storage that you present to your cluster such as Serial Attached SCSI / Fiber Channel / iSCSI or even Shared VHDX. more information on Storage requirements please visit http://technet.</description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 Preview is now available</title>
+      <link>/posts/2013-06-27-windows-8-1-preview-is-now-available/</link>
+      <pubDate>Thu, 27 Jun 2013 01:02:51 +0000</pubDate>
+      
+      <guid>/posts/2013-06-27-windows-8-1-preview-is-now-available/</guid>
+      <description>Microsoft just announced availability for Windows 8.1 Preview at the Build Conference. 8.1 Preview update can be downloaded as an update using Windows Store or it can also be downloaded as an ISO file. please use below to obtain Windows 8.1 Preview version.
+](http://windows.microsoft.com/en-us/windows-8/download-preview &amp;ldquo;http://windows.microsoft.com/en-us/windows-8/download-preview&amp;quot;)
+http://windows.microsoft.com/en-us/windows-8/download-preview</description>
+    </item>
+    
+    <item>
+      <title>Remove Windows.old after using in-place upgrade method on Windows Server 2012 R2 Preview</title>
+      <link>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</link>
+      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
+      
+      <guid>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</guid>
+      <description>After obtaining Windows Server 2012 R2 Preview, I thought of upgrading my lab environment. Upon completing Server 2012 R2 Preview upgrade, I noticed that there’s a Windows.old folder in my System drive which takes around 20GB of space.
+now that I have already upgraded in to Server 2012 R2 Preview and confirmed that all my applications / file are available, I decided to delete Windows.old folder.
+Best way to do this, is to use Disk Cleanup Tool.</description>
+    </item>
+    
+    <item>
+      <title>Windows Server &amp;#038; System Center 2012 R2 Preview now available for download</title>
+      <link>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</guid>
+      <description>Microsoft has just released preview version of Windows Server 2012 R2 &amp;amp; System Center 2012 R2. Preview versions can be downloaded from link below
+http://technet.microsoft.com/en-US/evalcenter/dn205292?WT.mc_id=Blog_SC_TEE_WS12R2
+along with above mentioned products, there’s also preview versions available for following products
+ -Windows Server 2012 R2 Preview on Windows Azure
+-Windows Server 2012 R2 Essentials Preview
+-SQL Server 2014 CTP 1
+-Windows Azure Pack
+ For information relating to what’s new on Windows Server 2012 R2 use below link</description>
+    </item>
+    
+    <item>
+      <title>Mark my Comments on Outlook</title>
+      <link>/posts/2013-05-22-mark-my-comments-on-outlook/</link>
+      <pubDate>Wed, 22 May 2013 01:44:06 +0000</pubDate>
+      
+      <guid>/posts/2013-05-22-mark-my-comments-on-outlook/</guid>
+      <description>Often when responding back to emails, we need to provide our comments inline. we usually do this manually by adding our name, changing fonts, making font bold etc. it’s possible to mark comments automatically on Outlook and I find it as a great feature which saves a significant amount of time.
+On outlook 2013, you need to follow below mentioned steps to get it activated as this feature is not enabled by default.</description>
+    </item>
+    
+    <item>
+      <title>Backup failed–nonrecoverable I/O error occurred OperationsManagerDW</title>
+      <link>/posts/2013-03-18-backup-failednonrecoverable-io-error-occurred-operationsmanagerdw/</link>
+      <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
+      
+      <guid>/posts/2013-03-18-backup-failednonrecoverable-io-error-occurred-operationsmanagerdw/</guid>
+      <description>I was recently sent this error by a customer who was trying to backup their Operations Manager 2012 Data warehouse database.
+ I did some initial troubleshooting and found out that the database was around 130GB in size and the destination didn’t have sufficient space for the backup. I tried with an alterative location with more storage space, and I was able to successfully backup the database.
+I would also recommend looking at database grooming settings for Operations Manager data warehouse, as this database could be large in size with time.</description>
+    </item>
+    
+    <item>
+      <title>Unable to build a cluster when sharing the same network for iSCSI Storage</title>
+      <link>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</link>
+      <pubDate>Tue, 19 Feb 2013 16:21:17 +0000</pubDate>
+      
+      <guid>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</guid>
+      <description>In this blog post we will look at an issue relating to sharing the same iSCSI Storage network for cluster communication. Looking at networking best practices for creating a Windows Server 2012 Failover Cluster, it is recommend that we separate iSCSI storage traffic from Cluster Communication. iSCSI needs to be on a separate dedicated network and it is not recommended to share iSCSI Storage Trafic &amp;amp; Network communication traffic.
+At the time of cluster being created, it will automatically disable the network for cluster communication if it is used for iSCSI Storage traffic and this will cause the cluster creation to fail.</description>
+    </item>
+    
+    <item>
+      <title>New Virtualization Jump Starts! Register for Hyper-V &amp;#038; Virt for VMware Pros Now!</title>
+      <link>/posts/2013-01-23-new-virtualization-jump-starts-register-for-hyper-v-virt-for-vmware-pros-now/</link>
+      <pubDate>Wed, 23 Jan 2013 10:12:18 +0000</pubDate>
+      
+      <guid>/posts/2013-01-23-new-virtualization-jump-starts-register-for-hyper-v-virt-for-vmware-pros-now/</guid>
+      <description>The Microsoft Virtual Academy (MVA) team is excited to open registration for two new courses in a three-Jump Start series focused on virtualization. These one-day live online events are designed for IT Pros experienced in virtualization but interested in learning how to better leverage the Windows Server 2012 platform, Hyper-V and System Center 2012 SP1. All three courses will leverage a team-teaching approach to deliver an engaging, demo-rich, live learning experience.</description>
+    </item>
+    
+    <item>
+      <title>System Center 2012 SP1 &amp;#8211; General Availability</title>
+      <link>/posts/2013-01-17-system-center-2012-sp1-general-availability/</link>
+      <pubDate>Thu, 17 Jan 2013 11:57:16 +0000</pubDate>
+      
+      <guid>/posts/2013-01-17-system-center-2012-sp1-general-availability/</guid>
+      <description>System Center 2012 SP1 Final release was made available to public (General Availability) on 15thJan. System Center SP1 delivers many enhanced capabilities across both desktop management and datacenter management.
+Some of the key changes with SP1 for Datacenter Management
+ Support for Windows Server 2012 and SQL Server 2012 Software Defined Networking (Network Virtualization) Global Service Monitor with Windows Azure / Visual Studio &amp;amp; Operations Manager Hybrid Cloud Management (Integration of Off-premises Resources in to your own Datacenter) Cloud-based Pricing and Chargeback Copy an On-premises Virtual Machine to Windows Azure Windows Azure Online Backup integration with Data Protection Manager  More information –</description>
+    </item>
+    
+    <item>
+      <title>What’s new in Windows Server 2012 Failover Clustering–Part 1</title>
+      <link>/posts/2013-01-01-whats-new-in-windows-server-2012-failover-clusteringpart-1/</link>
+      <pubDate>Tue, 01 Jan 2013 14:16:00 +0000</pubDate>
+      
+      <guid>/posts/2013-01-01-whats-new-in-windows-server-2012-failover-clusteringpart-1/</guid>
+      <description>In this blog post we will have a look at new capabilities &amp;amp; features introduced in Failover Clustering with Windows Server 2012. We will also discuss on features which were improved from Windows Server 2008 R2 Failover Clustering.
+Lets first look at scalability improvements in Failover Clustering.
+With Windows Server 2012 Failover Clustering, we can now scale up to 64 Nodes compared to 16 nodes which was possible on Windows Server 2008 R2.</description>
+    </item>
+    
+    <item>
+      <title>Unable to Sign-in to Skype–Windows 8 Release Preview</title>
+      <link>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</guid>
+      <description>I noticed that I’m unable to sign-in to Skype on my Windows 8 Release Preview version. I have tried to find a solution for this login issue and finally I discovered that we can delete shared.xml file and fix this issue.
+first you need to make sure that Skype is not running, if its running you need to close it or end taskafter closing Skype navigate towards “%appdata%/Skype” and delete shared.</description>
+    </item>
+    
+    <item>
+      <title>Presentation Timer Tool</title>
+      <link>/posts/2012-06-04-presentation-timer-tool/</link>
+      <pubDate>Mon, 04 Jun 2012 18:41:16 +0000</pubDate>
+      
+      <guid>/posts/2012-06-04-presentation-timer-tool/</guid>
+      <description>While searching for a tool that can be used as a countdown when delivering presentations &amp;amp; demonstration I found this tool “Presto’s Presentation Timer” . This tool can be customized based on the duration of the presentation and you can start/pause the countdown as and when required.
+You can download this presentation tool from this link http://prestonhunt.com/story/109</description>
+    </item>
+    
+    <item>
+      <title>Windows 8 Release Preview &amp;#038; Windows Server 2012 Release Candidate Now Available</title>
+      <link>/posts/2012-06-01-windows-8-release-preview-windows-server-2012-release-candidate-now-available/</link>
+      <pubDate>Fri, 01 Jun 2012 01:02:40 +0000</pubDate>
+      
+      <guid>/posts/2012-06-01-windows-8-release-preview-windows-server-2012-release-candidate-now-available/</guid>
+      <description>Microsoft released Windows 8 Release Preview &amp;amp; Server 2012 Release Candidate on 31st May 2012, which is the pre-RTM version of Windows Client &amp;amp; Server Operating systems, going to be available later this year. You can download both Client &amp;amp; Server operating systems using links below
+Download Windows 8 Release Preview http://aka.ms/win8rp
+Download Windows Server 2012 Release Candidate http://aka.ms/ws2012rc</description>
+    </item>
+    
+    <item>
+      <title>Installing Windows Server 8 Beta</title>
+      <link>/posts/2012-03-02-installing-windows-server-8-beta-2/</link>
+      <pubDate>Fri, 02 Mar 2012 23:45:52 +0000</pubDate>
+      
+      <guid>/posts/2012-03-02-installing-windows-server-8-beta-2/</guid>
+      <description>Finally most eagerly anticipated Windows 8 next release has been announced by Microsoft. This is the second public release of Windows 8 after releasing Windows 8 Develop Preview edition was announced on 29th February 2012.
+I have already downloaded Windows 8 Beta and I’m going to have a look at installation process in this blog post. if you haven’t yet downloaded Windows 8 beta, you can download from TechNet Evaluation Center by accessing following link</description>
     </item>
     
   </channel>

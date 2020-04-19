@@ -60,15 +60,15 @@
 </div>
 <div class="content post__content clearfix">
 			<p>In this blog post, I’m going to walkthrough and issue which I came across recently while setting up a lab environment for a customer. I downloaded latest ASR unified setup yesterday to build VMware (on-premises) to Azure (DR) scenario for a client. While running ASR Unified Setup, I came across below error, which was a bit strange for me as I had not seen that error before when running this setup(build a similar setup last month). All my servers are configured with EN-AU locale due to date/time format.</p>
-<p><a href="../wp-content/uploads/2017/03/clip_image002.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/03/clip_image002.jpg" alt=""></p>
 <p>So it appears that I cannot proceed ahead if I use EN-AU locale and I had go to regional settings and get it changed so that the setup can move ahead.</p>
 <p><strong>Step 01 –</strong> Open Control Panel and open Regional Settings. As you can see below my region format is set to “English (Australia)” which will no longer work with the new ASR Setup binaries.</p>
-<p><a href="../wp-content/uploads/2017/03/clip_image004.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/03/clip_image004.jpg" alt=""></p>
 <p><strong>Step 02 –</strong> Change Region Format to English (United States)</p>
-<p><a href="../wp-content/uploads/2017/03/clip_image006.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/03/clip_image006.jpg" alt=""></p>
 <p>After changing locale settings, I didn’t need to reboot the VM and straight off re-running the setup, I managed to get ASR setup to work. Simple fix.</p>
 <p>For anyone who’s wondering about version of the setup that I use, it is version <strong>9.7.4438.1</strong></p>
-<p><a href="../wp-content/uploads/2017/03/clip_image008.jpg"><!-- raw HTML omitted --></a></p>
+<p><img src="../wp-content/uploads/2017/03/clip_image008.jpg" alt=""></p>
 <p>For more information regarding ASR Setup, please find below few online resources</p>
 <p>Step by Step Instructions for setting up ASR – VMware to Azure <a href="https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-to-azure">https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-to-azure</a></p>
 <p>My Ignite session on ASR <a href="https://channel9.msdn.com/Events/Ignite/Australia-2017/INF334">https://channel9.msdn.com/Events/Ignite/Australia-2017/INF334</a></p>

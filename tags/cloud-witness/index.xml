@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Witness on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/cloud-witness/</link>
+    <description>Recent content in Cloud Witness on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Dec 2014 17:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cloud-witness/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud Witness in Windows Server vNext Technical Preview (2014-OCT)</title>
+      <link>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</link>
+      <pubDate>Sat, 06 Dec 2014 17:47:00 +0000</pubDate>
+      
+      <guid>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</guid>
+      <description>In this blog post, we will look at configuring Cloud Witness, a new quorum option introduced in Windows Server vNext Technical Preview (OCT 2014 Release). Cloud witness was introduced as an option similar to a File Share Witness, but hosted on Azure without having to maintain any infrastructure within your datacenter. This allows us to have multi-site clusters without having the need to have a 3rd site as a witness.</description>
+    </item>
+    
+  </channel>
+</rss>

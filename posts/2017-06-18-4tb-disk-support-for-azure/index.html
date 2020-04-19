@@ -8,7 +8,8 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="4TB Disk Support for Azure" />
-<meta property="og:description" content="&lt;p&gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR). &lt;/p&gt; &lt;p&gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity." />
+<meta property="og:description" content="Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/2017-06-18-4tb-disk-support-for-azure/" />
 <meta property="article:published_time" content="2017-06-18T01:51:50+00:00" />
@@ -16,7 +17,8 @@
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="4TB Disk Support for Azure"/>
-<meta name="twitter:description" content="&lt;p&gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR). &lt;/p&gt; &lt;p&gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity."/>
+<meta name="twitter:description" content="Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR)."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -59,211 +61,100 @@
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<!-- raw HTML omitted -->
-<pre><code>  &lt;p&gt;
-    At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR).
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    In this blog post, let’s look at how we can create a 4TB Data disk using Resource Manager Templates and using PowerShell.
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    ARM Template for adding new 4TB Data disk for an existing VM
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;strong&gt;Step 01 – &lt;/strong&gt;Making sure that you are running latest version of Azure PowerShell
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;img class=&quot;alignnone size-full wp-image-1271&quot; src=&quot;../wp-content/uploads/2017/06/2017-06-18-01_36_48-clipboard.png&quot; alt=&quot;2017-06-18 01_36_48-Clipboard.png&quot; width=&quot;940&quot; height=&quot;146&quot; srcset=&quot;../wp-content/uploads/2017/06/2017-06-18-01_36_48-clipboard.png 940w, ../wp-content/uploads/2017/06/2017-06-18-01_36_48-clipboard-300x47.png 300w, ../wp-content/uploads/2017/06/2017-06-18-01_36_48-clipboard-768x119.png 768w&quot; sizes=&quot;(max-width: 940px) 100vw, 940px&quot; /&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;strong&gt;Step 02 –&lt;/strong&gt; create a managed disk using Azure Powershell
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    [code language=&amp;#8221;powershell&amp;#8221;]$ResourceGroupName = &quot;NT-Proj01-RG1&quot;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    $location = &quot;australiaeast&quot;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    $datadiskName = &quot;4tbd1&quot;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    New-AzureRmDisk -DiskName $dataDiskName -Disk (New-AzureRmDiskConfig -AccountType StandardLR -Location $location -CreateOption Empty -DiskSizeGB 4095)`
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    -ResourceGroupName $ResourceGroupName[/code]&lt;br /&gt; &lt;img class=&quot;alignnone size-full wp-image-1274&quot; src=&quot;../wp-content/uploads/2017/06/2017-06-18-01_37_45-clipboard.png&quot; alt=&quot;2017-06-18 01_37_45-Clipboard.png&quot; width=&quot;940&quot; height=&quot;339&quot; srcset=&quot;../wp-content/uploads/2017/06/2017-06-18-01_37_45-clipboard.png 940w, ../wp-content/uploads/2017/06/2017-06-18-01_37_45-clipboard-300x108.png 300w, ../wp-content/uploads/2017/06/2017-06-18-01_37_45-clipboard-768x277.png 768w&quot; sizes=&quot;(max-width: 940px) 100vw, 940px&quot; /&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Looking at my resource group, I can now view my new disk resource
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;img class=&quot;alignnone size-full wp-image-1278&quot; src=&quot;../wp-content/uploads/2017/06/2017-06-18-01_38_52-clipboard.png&quot; alt=&quot;2017-06-18 01_38_52-Clipboard.png&quot; width=&quot;940&quot; height=&quot;538&quot; srcset=&quot;../wp-content/uploads/2017/06/2017-06-18-01_38_52-clipboard.png 940w, ../wp-content/uploads/2017/06/2017-06-18-01_38_52-clipboard-300x172.png 300w, ../wp-content/uploads/2017/06/2017-06-18-01_38_52-clipboard-768x440.png 768w&quot; sizes=&quot;(max-width: 940px) 100vw, 940px&quot; /&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;strong&gt;Step 03 –&lt;/strong&gt; Attach new disks into a virtual machine
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    In my example below I’m using the Azure portal to assign our new 4TB disk which we created.
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;img class=&quot;alignnone size-full wp-image-1280&quot; src=&quot;../wp-content/uploads/2017/06/2017-06-18-01_39_26-clipboard.png&quot; alt=&quot;2017-06-18 01_39_26-Clipboard.png&quot; width=&quot;940&quot; height=&quot;525&quot; srcset=&quot;../wp-content/uploads/2017/06/2017-06-18-01_39_26-clipboard.png 940w, ../wp-content/uploads/2017/06/2017-06-18-01_39_26-clipboard-300x168.png 300w, ../wp-content/uploads/2017/06/2017-06-18-01_39_26-clipboard-768x429.png 768w&quot; sizes=&quot;(max-width: 940px) 100vw, 940px&quot; /&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Hit save and the VM will get updated. After that, I’m going to login to the VM and have a look at the attached disk.
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;img class=&quot;alignnone size-full wp-image-1282&quot; src=&quot;../wp-content/uploads/2017/06/2017-06-18-01_39_57-clipboard.png&quot; alt=&quot;2017-06-18 01_39_57-Clipboard.png&quot; width=&quot;940&quot; height=&quot;221&quot; srcset=&quot;../wp-content/uploads/2017/06/2017-06-18-01_39_57-clipboard.png 940w, ../wp-content/uploads/2017/06/2017-06-18-01_39_57-clipboard-300x71.png 300w, ../wp-content/uploads/2017/06/2017-06-18-01_39_57-clipboard-768x181.png 768w&quot; sizes=&quot;(max-width: 940px) 100vw, 940px&quot; /&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;strong&gt;Using ARM Template&lt;/strong&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    [code language=&amp;#8221;java&amp;#8221;]{
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;$schema&quot;: &quot;https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;contentVersion&quot;: &quot;1.0.0.0&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;parameters&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;datadiskname&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;defaultValue&quot;: &quot;4tbdatad3&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;type&quot;: &quot;String&quot;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    }
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    },
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;variables&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    },
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;resources&quot;: [
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;type&quot;: &quot;Microsoft.Compute/disks&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;name&quot;: &quot;[parameters(&amp;#8216;datadiskname&amp;#8217;)]&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;apiVersion&quot;: &quot;2016-04-30-preview&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;location&quot;: &quot;australiaeast&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;properties&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;accountType&quot;: &quot;Standard_LRS&quot;,
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;creationData&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;createOption&quot;: &quot;Empty&quot;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    },
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;diskSizeGB&quot;: 4095
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    },
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;dependsOn&quot;: []
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    }
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    ],
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &quot;outputs&quot;: {
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    }
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    }[/code]
-  &lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
-<!-- raw HTML omitted -->
-<p> </p>
+			<p>Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.</p>
+<p>At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp; DR).</p>
+<p>Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.</p>
+<p>In this blog post, let’s look at how we can create a 4TB Data disk using Resource Manager Templates and using PowerShell.</p>
+<p>ARM Template for adding new 4TB Data disk for an existing VM</p>
+<p><!-- raw HTML omitted -->Step 01 – <!-- raw HTML omitted -->Making sure that you are running latest version of Azure PowerShell</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-01_36_48-clipboard.png" alt=""></p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Step 02 –<!-- raw HTML omitted --> create a managed disk using Azure Powershell</p>
+<p>[code language=”powershell”]$ResourceGroupName = &ldquo;NT-Proj01-RG1&rdquo;</p>
+<p>$location = &ldquo;australiaeast&rdquo;</p>
+<p>$datadiskName = &ldquo;4tbd1&rdquo;</p>
+<p>New-AzureRmDisk -DiskName $dataDiskName -Disk (New-AzureRmDiskConfig -AccountType StandardLR -Location $location -CreateOption Empty -DiskSizeGB 4095)`</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-01_37_45-clipboard.png" alt=""></p>
+<p>-ResourceGroupName $ResourceGroupName[/code]<!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<p>Looking at my resource group, I can now view my new disk resource</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-01_38_52-clipboard.png" alt=""></p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Step 03 –<!-- raw HTML omitted --> Attach new disks into a virtual machine</p>
+<p>In my example below I’m using the Azure portal to assign our new 4TB disk which we created.</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-01_39_26-clipboard.png" alt=""></p>
+<p><!-- raw HTML omitted --></p>
+<p>Hit save and the VM will get updated. After that, I’m going to login to the VM and have a look at the attached disk.</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-01_39_57-clipboard.png" alt=""></p>
+<p><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Using ARM Template<!-- raw HTML omitted --></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214
+</span></span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">219
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">220
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">221
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">222
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">223
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">224
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">225
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">226
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">227
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">228
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#e6db74">&#34;$schema&#34;</span>: <span style="color:#e6db74">&#34;https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#&#34;</span>,
+<span style="color:#e6db74">&#34;contentVersion&#34;</span>: <span style="color:#e6db74">&#34;1.0.0.0&#34;</span>,
+
+<span style="color:#e6db74">&#34;parameters&#34;</span>: {
+<span style="color:#e6db74">&#34;datadiskname&#34;</span>: {
+<span style="color:#e6db74">&#34;defaultValue&#34;</span>: <span style="color:#e6db74">&#34;4tbdatad3&#34;</span>,
+<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;String&#34;</span>
+<span style="display:block;width:100%;background-color:#3c3d38">}
+</span>},
+<span style="color:#e6db74">&#34;variables&#34;</span>: {
+},
+
+<span style="color:#e6db74">&#34;resources&#34;</span>: [
+{
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Compute/disks&#34;</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;[parameters(&amp;#8216;datadiskname&amp;#8217;)]&#34;</span>,
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;2016-04-30-preview&#34;</span>,
+</span><span style="color:#e6db74">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;australiaeast&#34;</span>,
+<span style="color:#e6db74">&#34;properties&#34;</span>: {
+<span style="color:#e6db74">&#34;accountType&#34;</span>: <span style="color:#e6db74">&#34;Standard_LRS&#34;</span>,
+<span style="color:#e6db74">&#34;creationData&#34;</span>: {
+<span style="color:#e6db74">&#34;createOption&#34;</span>: <span style="color:#e6db74">&#34;Empty&#34;</span>
+},
+<span style="color:#e6db74">&#34;diskSizeGB&#34;</span>: <span style="color:#ae81ff">4095</span>
+},
+<span style="color:#e6db74">&#34;dependsOn&#34;</span>: []
+}
+],
+<span style="color:#e6db74">&#34;outputs&#34;</span>: {
+}</code></pre></td></tr></table>
+</div>
+</div>
 <p>We can also extend existing disks both OS Disks and also Data disks using above-mentioned methods (Powershell or JSON Template).  Below example, I have extended the OS drive from 31GB to 1700GB by specifying OS Disk size in the ARM Template.</p>
+<p><img src="../wp-content/uploads/2017/06/2017-06-18-02_05_29-clipboard.png" alt=""></p>
 <p><!-- raw HTML omitted --></p>
 <p>More information, please have a look at below references</p>
 <p><a href="https://azure.microsoft.com/en-us/blog/azure-introduces-new-disks-sizes-up-to-4tb/?v=17.23h">https://azure.microsoft.com/en-us/blog/azure-introduces-new-disks-sizes-up-to-4tb/?v=17.23h</a></p>

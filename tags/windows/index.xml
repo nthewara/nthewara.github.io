@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/windows/</link>
+    <description>Recent content in Windows on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jun 2016 05:09:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Announcing Windows 10</title>
+      <link>/posts/2014-10-01-announcing-windows-10/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/posts/2014-10-01-announcing-windows-10/</guid>
+      <description>Earlier today Microsoft announced Windows 10, next version of the client Operating System. Following the announcement today, Technical Preview to be available on 1stOctober (US Date &amp;amp; Time), which will be available for us later tonight or early tomorrow.
+Microsoft is also introducing Windows Insider Program, which allows a user to download Windows 10 Technical Preview and also provide feedback to Microsoft.
+Official Announcement -&amp;gt; http://blogs.windows.com/bloggingwindows/2014/09/30/announcing-windows-10/
+Windows Insider Program -&amp;gt; http://preview.</description>
+    </item>
+    
+  </channel>
+</rss>

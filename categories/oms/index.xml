@@ -19,8 +19,17 @@
       <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
       <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers</description>
+    </item>
+    
+    <item>
+      <title>Wire Data Analysis with Operations Management Suite</title>
+      <link>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</guid>
+      <description>Wire Data Analysis capability was made available to Operations Management Suite (OMS) recently, and i had a quick look at it today.
+This solution provides network traffic analysis using existing OMS Agent for Windows 2012 R2 servers, Windows 8.1 clients and newer operating systems. To enable this functionality, all we need to do is to navigate to Solutions Gallery, Select Wire Data and click Add. Once you click add, OMS Agent will start collecting information and push them back to OMS Service.</description>
     </item>
     
   </channel>

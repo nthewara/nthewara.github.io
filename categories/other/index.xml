@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/categories/other/</link>
+    <description>Recent content in Other on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jun 2012 18:41:16 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Presentation Timer Tool</title>
+      <link>/posts/2012-06-04-presentation-timer-tool/</link>
+      <pubDate>Mon, 04 Jun 2012 18:41:16 +0000</pubDate>
+      
+      <guid>/posts/2012-06-04-presentation-timer-tool/</guid>
+      <description>While searching for a tool that can be used as a countdown when delivering presentations &amp;amp; demonstration I found this tool “Presto’s Presentation Timer” . This tool can be customized based on the duration of the presentation and you can start/pause the countdown as and when required.
+You can download this presentation tool from this link http://prestonhunt.com/story/109</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -30,5 +30,14 @@
 Quick blog post to walkthrough a script that I used during my Windows Server Technical Preview 5 Lab refresh. I used below script to search through a folder and look for all the virtual machines, and then get them imported in to Hyper-V. Credit should go to Ben who blogged about this few years back but the script was specific for Windows Server 2012 R2 which uses XML for VM configuration.</description>
     </item>
     
+    <item>
+      <title>New Virtualization Jump Starts! Register for Hyper-V &amp;#038; Virt for VMware Pros Now!</title>
+      <link>/posts/2013-01-23-new-virtualization-jump-starts-register-for-hyper-v-virt-for-vmware-pros-now/</link>
+      <pubDate>Wed, 23 Jan 2013 10:12:18 +0000</pubDate>
+      
+      <guid>/posts/2013-01-23-new-virtualization-jump-starts-register-for-hyper-v-virt-for-vmware-pros-now/</guid>
+      <description>The Microsoft Virtual Academy (MVA) team is excited to open registration for two new courses in a three-Jump Start series focused on virtualization. These one-day live online events are designed for IT Pros experienced in virtualization but interested in learning how to better leverage the Windows Server 2012 platform, Hyper-V and System Center 2012 SP1. All three courses will leverage a team-teaching approach to deliver an engaging, demo-rich, live learning experience.</description>
+    </item>
+    
   </channel>
 </rss>

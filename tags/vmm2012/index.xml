@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmm2012 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/vmm2012/</link>
+    <description>Recent content in vmm2012 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2014 13:46:59 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vmm2012/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MSFT_PartitionToVolume Internal Error</title>
+      <link>/posts/2013-09-17-msft_partitiontovolume-internal-error/</link>
+      <pubDate>Tue, 17 Sep 2013 06:34:32 +0000</pubDate>
+      
+      <guid>/posts/2013-09-17-msft_partitiontovolume-internal-error/</guid>
+      <description>while using VMM 2012 R2 Preview Version in my LAB environment, i noticed that i was getting errors from one of the hosts that i was managing as a Hyper-V Host.
+I found out that this issue is caused by having a SD Card in the system and VMM fails saying that it cannot communicate with my Host anymore. after removing SD Card, i was able to get VMM to work without any issues and my Hosts are responding back again.</description>
+    </item>
+    
+  </channel>
+</rss>

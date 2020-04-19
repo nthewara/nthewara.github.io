@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Preview on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</title>
+    <link>/tags/release-preview/</link>
+    <description>Recent content in Release Preview on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jun 2012 23:01:49 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/release-preview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unable to Sign-in to Skype–Windows 8 Release Preview</title>
+      <link>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</guid>
+      <description>I noticed that I’m unable to sign-in to Skype on my Windows 8 Release Preview version. I have tried to find a solution for this login issue and finally I discovered that we can delete shared.xml file and fix this issue.
+first you need to make sure that Skype is not running, if its running you need to close it or end taskafter closing Skype navigate towards “%appdata%/Skype” and delete shared.</description>
+    </item>
+    
+  </channel>
+</rss>

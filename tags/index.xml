@@ -138,6 +138,15 @@
     </item>
     
     <item>
+      <title>sql</title>
+      <link>/tags/sql/</link>
+      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SQL FCI</title>
       <link>/tags/sql-fci/</link>
       <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
@@ -192,6 +201,15 @@
     </item>
     
     <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cloud&amp;amp;Datacenter</title>
       <link>/tags/cloudampdatacenter/</link>
       <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
@@ -210,6 +228,15 @@
     </item>
     
     <item>
+      <title>Server</title>
+      <link>/tags/server/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ServerManagement</title>
       <link>/tags/servermanagement/</link>
       <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
@@ -224,6 +251,15 @@
       <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
       
       <guid>/tags/tp5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/tags/windows/</link>
+      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
+      
+      <guid>/tags/windows/</guid>
       <description></description>
     </item>
     
@@ -323,6 +359,528 @@
       <pubDate>Fri, 26 Feb 2016 16:54:07 +0000</pubDate>
       
       <guid>/tags/azureservermanagementws2016windowsserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure Portal</title>
+      <link>/tags/azure-portal/</link>
+      <pubDate>Thu, 03 Dec 2015 12:04:37 +0000</pubDate>
+      
+      <guid>/tags/azure-portal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzurePortal</title>
+      <link>/tags/azureportal/</link>
+      <pubDate>Thu, 03 Dec 2015 12:04:37 +0000</pubDate>
+      
+      <guid>/tags/azureportal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SystemCenter2016</title>
+      <link>/tags/systemcenter2016/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/tags/systemcenter2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TechnicalPreview4</title>
+      <link>/tags/technicalpreview4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/tags/technicalpreview4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TP4</title>
+      <link>/tags/tp4/</link>
+      <pubDate>Fri, 27 Nov 2015 14:59:27 +0000</pubDate>
+      
+      <guid>/tags/tp4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureCon</title>
+      <link>/tags/azurecon/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/tags/azurecon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureCon2015</title>
+      <link>/tags/azurecon2015/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/tags/azurecon2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSFT</title>
+      <link>/tags/msft/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/tags/msft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>/tags/microsoft/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Operations Management Suite</title>
+      <link>/tags/microsoft-operations-management-suite/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/tags/microsoft-operations-management-suite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>/tags/monitoring/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpsInsights</title>
+      <link>/tags/opsinsights/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/tags/opsinsights/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WireData</title>
+      <link>/tags/wiredata/</link>
+      <pubDate>Wed, 05 Aug 2015 20:52:42 +0000</pubDate>
+      
+      <guid>/tags/wiredata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM</title>
+      <link>/tags/scsm/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/tags/scsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM2012R2</title>
+      <link>/tags/scsm2012r2/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/tags/scsm2012r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Manager</title>
+      <link>/tags/service-manager/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/tags/service-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL2014</title>
+      <link>/tags/sql2014/</link>
+      <pubDate>Wed, 24 Jun 2015 15:13:20 +0000</pubDate>
+      
+      <guid>/tags/sql2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continue Technical Preview</title>
+      <link>/tags/continue-technical-preview/</link>
+      <pubDate>Tue, 14 Apr 2015 09:47:03 +0000</pubDate>
+      
+      <guid>/tags/continue-technical-preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical Preview</title>
+      <link>/tags/technical-preview/</link>
+      <pubDate>Tue, 14 Apr 2015 09:47:03 +0000</pubDate>
+      
+      <guid>/tags/technical-preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build Expire</title>
+      <link>/tags/build-expire/</link>
+      <pubDate>Sat, 04 Apr 2015 08:15:32 +0000</pubDate>
+      
+      <guid>/tags/build-expire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expire</title>
+      <link>/tags/expire/</link>
+      <pubDate>Sat, 04 Apr 2015 08:15:32 +0000</pubDate>
+      
+      <guid>/tags/expire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Witness</title>
+      <link>/tags/cloud-witness/</link>
+      <pubDate>Sat, 06 Dec 2014 17:47:00 +0000</pubDate>
+      
+      <guid>/tags/cloud-witness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server vNext</title>
+      <link>/tags/server-vnext/</link>
+      <pubDate>Sat, 06 Dec 2014 17:47:00 +0000</pubDate>
+      
+      <guid>/tags/server-vnext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datacenter</title>
+      <link>/tags/datacenter/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/tags/datacenter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows10</title>
+      <link>/tags/windows10/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/tags/windows10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmm2012</title>
+      <link>/tags/vmm2012/</link>
+      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
+      
+      <guid>/tags/vmm2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmm2012;WinRM</title>
+      <link>/tags/vmm2012winrm/</link>
+      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
+      
+      <guid>/tags/vmm2012winrm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>/tags/clustering/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindowsServer2012R2</title>
+      <link>/tags/windowsserver2012r2/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/tags/windowsserver2012r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WinServer</title>
+      <link>/tags/winserver/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/tags/winserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VLSC</title>
+      <link>/tags/vlsc/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/tags/vlsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server Update</title>
+      <link>/tags/windows-server-update/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/tags/windows-server-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WS12R2</title>
+      <link>/tags/ws12r2/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/tags/ws12r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WS2012</title>
+      <link>/tags/ws2012/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/tags/ws2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WS2012R2</title>
+      <link>/tags/ws2012r2/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/tags/ws2012r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2012 R2 Update</title>
+      <link>/tags/2012-r2-update/</link>
+      <pubDate>Mon, 14 Apr 2014 15:58:09 +0000</pubDate>
+      
+      <guid>/tags/2012-r2-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2014</title>
+      <link>/tags/2014/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/tags/2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OLTP</title>
+      <link>/tags/oltp/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/tags/oltp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQLServer</title>
+      <link>/tags/sqlserver/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/tags/sqlserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RTM</title>
+      <link>/tags/rtm/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/tags/rtm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows8</title>
+      <link>/tags/windows8/</link>
+      <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
+      
+      <guid>/tags/windows8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server2012</title>
+      <link>/tags/server2012/</link>
+      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
+      
+      <guid>/tags/server2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server2012R2</title>
+      <link>/tags/server2012r2/</link>
+      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
+      
+      <guid>/tags/server2012r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows.old</title>
+      <link>/tags/windows.old/</link>
+      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
+      
+      <guid>/tags/windows.old/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SystemCenter2012R2</title>
+      <link>/tags/systemcenter2012r2/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/tags/systemcenter2012r2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WSSC</title>
+      <link>/tags/wssc/</link>
+      <pubDate>Tue, 25 Jun 2013 19:03:57 +0000</pubDate>
+      
+      <guid>/tags/wssc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Outlook2013</title>
+      <link>/tags/outlook2013/</link>
+      <pubDate>Wed, 22 May 2013 01:44:06 +0000</pubDate>
+      
+      <guid>/tags/outlook2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>/tags/productivity/</link>
+      <pubDate>Wed, 22 May 2013 01:44:06 +0000</pubDate>
+      
+      <guid>/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backup</title>
+      <link>/tags/backup/</link>
+      <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
+      
+      <guid>/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dw</title>
+      <link>/tags/dw/</link>
+      <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
+      
+      <guid>/tags/dw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scom</title>
+      <link>/tags/scom/</link>
+      <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
+      
+      <guid>/tags/scom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vmware</title>
+      <link>/tags/vmware/</link>
+      <pubDate>Wed, 23 Jan 2013 10:12:18 +0000</pubDate>
+      
+      <guid>/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datacenter Management</title>
+      <link>/tags/datacenter-management/</link>
+      <pubDate>Thu, 17 Jan 2013 11:57:16 +0000</pubDate>
+      
+      <guid>/tags/datacenter-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SP1</title>
+      <link>/tags/sp1/</link>
+      <pubDate>Thu, 17 Jan 2013 11:57:16 +0000</pubDate>
+      
+      <guid>/tags/sp1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release Preview</title>
+      <link>/tags/release-preview/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/tags/release-preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sign-in Issues</title>
+      <link>/tags/sign-in-issues/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/tags/sign-in-issues/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skype</title>
+      <link>/tags/skype/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/tags/skype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 8</title>
+      <link>/tags/windows-8/</link>
+      <pubDate>Thu, 07 Jun 2012 23:01:49 +0000</pubDate>
+      
+      <guid>/tags/windows-8/</guid>
       <description></description>
     </item>
     

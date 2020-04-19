@@ -26,7 +26,8 @@
       <pubDate>Sun, 18 Jun 2017 01:51:50 +0000</pubDate>
       
       <guid>/posts/2017-06-18-4tb-disk-support-for-azure/</guid>
-      <description>&amp;lt;p&amp;gt; At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR). &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Since the OS disks get created as a MBR drive, maximum supported for the OS disk is still limited at 2TB, however, Data disks can be attached up to 4TB of capacity.</description>
+      <description>Microsoft recently increased maximum Virtual disks size for all Azure datacentres. Now we can create disks up to 4TB and assign to Virtual machines. This also increases total capacity supported up to 256TBs per VM.
+At the moment, we cannot create large disks or resize using the Azure Portal, and this needs to be done using an ARM template. Portal changes are planned to be rolled out within next few weeks along with the support for Azure backups and also Azure Site Recovery (Migration &amp;amp; DR).</description>
     </item>
     
     <item>
@@ -66,7 +67,6 @@ A recent announcement from Microsoft states that they now support for Single In
       <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
       <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers</description>
     </item>
     
@@ -99,6 +99,29 @@ First Step involved in setting up Server Management Tools is for us to create a 
       <description>Microsoft recently released Azure Server Management Tools preview for web-based management tools for Windows Server 2016 Technical Preview running on-premises as well as in Azure.
 Currently, Server Management Tools offer the following capabilities:
  View and change system configuration View performance across various resources and manage processes and services Manage devices attached to the server View event logs View the list of installed roles and features Use a PowerShell console to manage and automate  Having server management tools available in Azure gives me the flexibility to manage my on-premises Windows Server 2016 servers and also Azure Windows Server 2016 Servers using a single portal.</description>
+    </item>
+    
+    <item>
+      <title>Azure Portal General Availability</title>
+      <link>/posts/2015-12-03-azure-portal-general-availability/</link>
+      <pubDate>Thu, 03 Dec 2015 12:04:37 +0000</pubDate>
+      
+      <guid>/posts/2015-12-03-azure-portal-general-availability/</guid>
+      <description>Today morning Microsoft announced general availability for Azure Preview Portal (portal.azure.com). Logging in to the old portal(Manage.windowsazure.com), we can now see a new banner that allows you to click and re-direct to the new Azure Portal.
+https://azure.microsoft.com/en-us/blog/announcing-azure-portal-general-availability/</description>
+    </item>
+    
+    <item>
+      <title>Azure Announcements at AzureCon 2015</title>
+      <link>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</link>
+      <pubDate>Wed, 30 Sep 2015 03:58:18 +0000</pubDate>
+      
+      <guid>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</guid>
+      <description>Quick post to summerize some of the new Azure Announcements at AzureCON 2015 event.
+– 3 New Azure Datacentres Announced (3 in India), with this Microsoft has more datacentre than Google and AWS combined(24 Regions around the world)
+– New N-Series VMs which has GPU Capabilities– for graphics-intensive workloads
+– New next generation D Series Virtual Machines (DV2 – 35% Faster than D series VMs)
+– Azure Security Centre Announced – to be made available later this year</description>
     </item>
     
   </channel>

@@ -19,7 +19,6 @@
       <guid>/posts/2016-11-22-application-dependency-monitoring-with-oms/</guid>
       <description>Last year Microsoft acquired a company that specializes in App Dependency Monitoring called Bluestripe. This solution is now built into OMS which automatically maps dependencies by monitoring inbounds and outbound connections. Dependency Monitor creates a Service Map which also integrates with other services such as Security &amp;amp; Update Solutions.
 Below is an example where we have a Service Map which shows DPM Agent installed on a Hyper-V Host
-
 We can also see Windows Updates on each of the dependent servers</description>
     </item>
     

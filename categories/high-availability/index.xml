@@ -31,5 +31,90 @@ Utilizing Guest clusters in Azure enables mission critical application such as a
 Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5</description>
     </item>
     
+    <item>
+      <title>Continue to use Windows Server Technical Preview 1 (OCT 2014)</title>
+      <link>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</link>
+      <pubDate>Tue, 14 Apr 2015 09:47:03 +0000</pubDate>
+      
+      <guid>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</guid>
+      <description>In this blog post we will look at how we can continue to use Windows Server Technical Preview and extend its expiry date till 1st OCT 2015.
+At the moment when we login to Server Technical Preview before applying the hotfix, we get following message (I have another blog post earlier regarding this http://nirmalt.com/2015/04/04/this-build-of-windows-will-expire-soon-windows-server-technical-preview/)
+Checking on Windows Version (winver)
+Microsoft recently released a hotfix which will extend the time duration of Windows Server Technical Preview.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Witness in Windows Server vNext Technical Preview (2014-OCT)</title>
+      <link>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</link>
+      <pubDate>Sat, 06 Dec 2014 17:47:00 +0000</pubDate>
+      
+      <guid>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</guid>
+      <description>In this blog post, we will look at configuring Cloud Witness, a new quorum option introduced in Windows Server vNext Technical Preview (OCT 2014 Release). Cloud witness was introduced as an option similar to a File Share Witness, but hosted on Azure without having to maintain any infrastructure within your datacenter. This allows us to have multi-site clusters without having the need to have a 3rd site as a witness.</description>
+    </item>
+    
+    <item>
+      <title>TECH2014 Houston Sessions by Cluster Team</title>
+      <link>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</link>
+      <pubDate>Mon, 19 May 2014 13:45:15 +0000</pubDate>
+      
+      <guid>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</guid>
+      <description>Cluster Product group presented multiple sessions at TECH2014 which took place in Houston from 12th to 15th May 2014. please find below list of sessions which were presented at the event.
+1) ****DCIM-B354 Failover Clustering: What’s New in Windows Server 2012 R2
+2) ****DCIM-B364 Step-by-Step to Deploying Microsoft SQL Server 2014 with Cluster Shared Volumes
+3) ****DCIM-B349 Software-Defined Storage in Windows Server 2012 R2 and Microsoft System Center 2012 R2</description>
+    </item>
+    
+    <item>
+      <title>Updated Windows Server / Windows Client Media Now Available</title>
+      <link>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</link>
+      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
+      
+      <guid>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</guid>
+      <description>Microsoft has released updated Media files containing Windows Server 2012 R2 / Windows 8.1 Client Update on Volume License Service Center. This new media kit is recommended to be used for any future deployments since it contains all security fixes since RTM.
+Updated ISO files can be obtained from following sources
+ MSDN (For Evaluation) TECHNET (For Evaluation) Volume Licensing Service Center (Enterprise Deployment)  more details please visit
+http://blogs.technet.com/b/windowsserver/archive/2014/04/14/updated-volume-license-media-available-today-for-windows-server-2012-r2-update.aspx</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012 R2 Update</title>
+      <link>/posts/2014-04-14-windows-server-2012-r2-update/</link>
+      <pubDate>Mon, 14 Apr 2014 15:58:09 +0000</pubDate>
+      
+      <guid>/posts/2014-04-14-windows-server-2012-r2-update/</guid>
+      <description>Microsoft recently released a consolidated update package for Windows Server 2012 R2 and Windows 8.1 Client. this is the new service baseline for Windows Server 2012 R2 systems and it can be either downloaded using Microsoft Download Center or using Windows Update. Microsoft earlier released this update to Microsoft MSDN/TechNet Subscribers and today it will be made available to Volume License customers as an updated Windows Server 2012 R2 ISO media.</description>
+    </item>
+    
+    <item>
+      <title>Step by Step–Two Node File Server Cluster (Part 01)</title>
+      <link>/posts/2013-11-20-step-by-steptwo-node-file-server-cluster-part-01/</link>
+      <pubDate>Wed, 20 Nov 2013 04:33:00 +0000</pubDate>
+      
+      <guid>/posts/2013-11-20-step-by-steptwo-node-file-server-cluster-part-01/</guid>
+      <description>In this blog post, we will look at creating a Two Node File Server Cluster
+Step 01 – Prepare your storage and Networks. In this demonstration I’m using Two Windows Server 2012 R2 Virtual Machines. I have two networks on each VM. One network for client communication and the other for cluster communication. I’m using iSCSI shared storage for this environment.
+Step 02 – Next step would be for us to install Failover Cluster Features on both nodes.</description>
+    </item>
+    
+    <item>
+      <title>How to add a disk to a Cluster</title>
+      <link>/posts/2013-07-30-how-to-add-a-disk-to-a-cluster/</link>
+      <pubDate>Tue, 30 Jul 2013 04:01:00 +0000</pubDate>
+      
+      <guid>/posts/2013-07-30-how-to-add-a-disk-to-a-cluster/</guid>
+      <description>In this post we will look at how we can add a disk resource to a cluster and also how to convert a disk in to a CSV (Cluster Shared Volume) storage.
+first step is to have eligible storage available within the cluster. storage could be, any shared storage that you present to your cluster such as Serial Attached SCSI / Fiber Channel / iSCSI or even Shared VHDX. more information on Storage requirements please visit http://technet.</description>
+    </item>
+    
+    <item>
+      <title>Unable to build a cluster when sharing the same network for iSCSI Storage</title>
+      <link>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</link>
+      <pubDate>Tue, 19 Feb 2013 16:21:17 +0000</pubDate>
+      
+      <guid>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</guid>
+      <description>In this blog post we will look at an issue relating to sharing the same iSCSI Storage network for cluster communication. Looking at networking best practices for creating a Windows Server 2012 Failover Cluster, it is recommend that we separate iSCSI storage traffic from Cluster Communication. iSCSI needs to be on a separate dedicated network and it is not recommended to share iSCSI Storage Trafic &amp;amp; Network communication traffic.
+At the time of cluster being created, it will automatically disable the network for cluster communication if it is used for iSCSI Storage traffic and this will cause the cluster creation to fail.</description>
+    </item>
+    
   </channel>
 </rss>
