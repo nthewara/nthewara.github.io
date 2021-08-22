@@ -6,11 +6,7 @@
     <description>Recent content in WS2012 on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2014 06:23:54 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/ws2012/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Feb 2013 16:21:17 +0000</lastBuildDate><atom:link href="/tags/ws2012/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unable to build a cluster when sharing the same network for iSCSI Storage</title>
       <link>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</link>

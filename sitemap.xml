@@ -1,830 +1,500 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/azure/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure-iaas/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure-licensing/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hub/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hybrid-use-benefit/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/microsoft/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/software-assurance/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/virtual-machine/</loc>
     <lastmod>2017-06-21T22:40:30+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/4tb/</loc>
     <lastmod>2017-06-18T01:51:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2017-06-18-4tb-disk-support-for-azure/</loc>
     <lastmod>2017-06-18T01:51:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure-disk/</loc>
     <lastmod>2017-06-18T01:51:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/extendeddisk/</loc>
     <lastmod>2017-06-18T01:51:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/managed-disks/</loc>
     <lastmod>2017-06-18T01:51:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/9.7/</loc>
     <lastmod>2017-03-21T08:48:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/asr/</loc>
     <lastmod>2017-03-21T08:48:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/asr-unified-setup/</loc>
     <lastmod>2017-03-21T08:48:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2017-03-21-azure-site-recovery-unified-setup-9-7-change-input-language-to-english/</loc>
     <lastmod>2017-03-21T08:48:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/virtualization/</loc>
     <lastmod>2017-03-21T08:48:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/high-availability/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/s2d/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/sql/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/sql/</loc>
-    <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sql-fci/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/storage/</loc>
     <lastmod>2017-02-19T22:11:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure-vm/</loc>
     <lastmod>2016-11-23T11:20:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-11-23-single-instance-vm-sla-in-azure/</loc>
     <lastmod>2016-11-23T11:20:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sla/</loc>
     <lastmod>2016-11-23T11:20:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/app/</loc>
     <lastmod>2016-11-22T18:13:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-11-22-application-dependency-monitoring-with-oms/</loc>
     <lastmod>2016-11-22T18:13:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/msoms/</loc>
     <lastmod>2016-11-22T18:13:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/oms/</loc>
     <lastmod>2016-11-22T18:13:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/system-center/</loc>
     <lastmod>2016-10-12T18:52:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/windows-server/</loc>
     <lastmod>2016-10-12T18:52:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-10-12-windows-server-2016-system-center-2016-general-availability/</loc>
     <lastmod>2016-10-12T18:52:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/award/</loc>
     <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-07-09-awarded-as-a-microsoft-mvp-for-6th-consecutive-year/</loc>
     <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/cloud/</loc>
-    <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/cloudampdatacenter/</loc>
     <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/mvp/</loc>
     <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/personal/</loc>
     <lastmod>2016-07-09T08:59:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/management/</loc>
     <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/server/</loc>
-    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/servermanagement/</loc>
     <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tp5/</loc>
     <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/windows/</loc>
-    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</loc>
     <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/windowsserver/</loc>
-    <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windowsserver2016/</loc>
     <lastmod>2016-06-06T05:09:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hyper-v/</loc>
     <lastmod>2016-05-02T20:55:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/import/</loc>
     <lastmod>2016-05-02T20:55:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-05-02-import-all-virtual-machines-in-a-folder-using-powershell/</loc>
     <lastmod>2016-05-02T20:55:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/powershell/</loc>
     <lastmod>2016-05-02T20:55:38+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</loc>
     <lastmod>2016-05-01T14:52:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/storagespaces/</loc>
     <lastmod>2016-05-01T14:52:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/storagespacesdirect/</loc>
     <lastmod>2016-05-01T14:52:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/windowsserver/</loc>
+    <lastmod>2016-05-01T14:52:27+00:00</lastmod>
+  </url><url>
     <loc>/posts/2016-04-29-now-available-windows-server-and-system-center-2016-technical-preview-5/</loc>
     <lastmod>2016-04-29T09:07:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nano/</loc>
     <lastmod>2016-04-12T10:26:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nano-server/</loc>
     <lastmod>2016-04-12T10:26:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nanoserver/</loc>
     <lastmod>2016-04-12T10:26:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-04-12-why-nano-server/</loc>
     <lastmod>2016-04-12T10:26:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-02-26-azure-server-management-toolsinstallation/</loc>
     <lastmod>2016-02-26T16:54:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azureservermanagementws2016windowsserver/</loc>
     <lastmod>2016-02-26T16:54:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2016-02-12-azure-server-management-tools-previewintroduction/</loc>
     <lastmod>2016-02-12T13:44:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure-portal/</loc>
     <lastmod>2015-12-03T12:04:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-12-03-azure-portal-general-availability/</loc>
     <lastmod>2015-12-03T12:04:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azureportal/</loc>
     <lastmod>2015-12-03T12:04:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-11-28-installing-nano-servertechnical-preview-4/</loc>
     <lastmod>2015-11-28T09:55:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/systemcenter2016/</loc>
     <lastmod>2015-11-27T14:59:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/technicalpreview4/</loc>
     <lastmod>2015-11-27T14:59:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tp4/</loc>
     <lastmod>2015-11-27T14:59:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-11-27-windows-server-2016-system-center-2016-technical-preview-4/</loc>
     <lastmod>2015-11-27T14:59:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-09-30-azure-announcements-at-azurecon-2015/</loc>
     <lastmod>2015-09-30T03:58:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azurecon/</loc>
     <lastmod>2015-09-30T03:58:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azurecon2015/</loc>
     <lastmod>2015-09-30T03:58:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/msft/</loc>
     <lastmod>2015-09-30T03:58:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/microsoft/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/microsoft-operations-management-suite/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/monitoring/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/opsinsights/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-08-05-wire-data-analysis-with-operations-management-suite/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/wiredata/</loc>
     <lastmod>2015-08-05T20:52:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/scsm/</loc>
     <lastmod>2015-06-24T15:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/scsm2012r2/</loc>
     <lastmod>2015-06-24T15:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/service-manager/</loc>
     <lastmod>2015-06-24T15:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-06-24-service-manager-2012-r2-with-sql-2014/</loc>
     <lastmod>2015-06-24T15:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sql2014/</loc>
     <lastmod>2015-06-24T15:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/continue-technical-preview/</loc>
     <lastmod>2015-04-14T09:47:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-04-14-continue-to-use-windows-server-technical-preview-1-oct-2014/</loc>
     <lastmod>2015-04-14T09:47:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/technical-preview/</loc>
     <lastmod>2015-04-14T09:47:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/build-expire/</loc>
     <lastmod>2015-04-04T08:15:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/expire/</loc>
     <lastmod>2015-04-04T08:15:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-04-04-this-build-of-windows-will-expire-soon-windows-server-technical-preview/</loc>
     <lastmod>2015-04-04T08:15:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-02-10-updating-configuration-manager-client-package-with-client-agent-hotfixes/</loc>
     <lastmod>2015-02-10T07:38:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/windows-client/</loc>
     <lastmod>2015-02-10T07:38:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2015-01-24-windows-10-previewjanuary-build-now-available-9926/</loc>
     <lastmod>2015-01-24T08:31:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/cloud-witness/</loc>
     <lastmod>2014-12-06T17:47:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-12-06-cloud-witness-in-windows-server-vnext-2014-oct/</loc>
     <lastmod>2014-12-06T17:47:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/server-vnext/</loc>
     <lastmod>2014-12-06T17:47:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-10-01-announcing-windows-10/</loc>
     <lastmod>2014-10-01T07:56:34+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/cloud/</loc>
+    <lastmod>2014-10-01T07:56:34+00:00</lastmod>
+  </url><url>
     <loc>/tags/datacenter/</loc>
     <lastmod>2014-10-01T07:56:34+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/server/</loc>
+    <lastmod>2014-10-01T07:56:34+00:00</lastmod>
+  </url><url>
+    <loc>/tags/windows/</loc>
+    <lastmod>2014-10-01T07:56:34+00:00</lastmod>
+  </url><url>
     <loc>/tags/windows10/</loc>
     <lastmod>2014-10-01T07:56:34+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/</loc>
     <lastmod>2014-09-22T13:46:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/vmm2012/</loc>
-    <lastmod>2014-09-22T13:46:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vmm2012winrm/</loc>
     <lastmod>2014-09-22T13:46:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/clustering/</loc>
     <lastmod>2014-05-19T13:45:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-05-19-tech2014-houston-sessions-by-cluster-team/</loc>
     <lastmod>2014-05-19T13:45:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windowsserver2012r2/</loc>
     <lastmod>2014-05-19T13:45:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/winserver/</loc>
     <lastmod>2014-05-19T13:45:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-04-16-updated-windows-server-windows-client-media-now-available/</loc>
     <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vlsc/</loc>
     <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windows-server-update/</loc>
     <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ws12r2/</loc>
     <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ws2012/</loc>
-    <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ws2012r2/</loc>
     <lastmod>2014-04-16T06:23:54+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/2012-r2-update/</loc>
     <lastmod>2014-04-14T15:58:09+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2014-04-14-windows-server-2012-r2-update/</loc>
     <lastmod>2014-04-14T15:58:09+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/2014/</loc>
     <lastmod>2014-04-02T13:30:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/oltp/</loc>
     <lastmod>2014-04-02T13:30:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/sql/</loc>
+    <lastmod>2014-04-02T13:30:29+00:00</lastmod>
+  </url><url>
     <loc>/posts/2014-04-02-sql-server-2014-general-availability/</loc>
     <lastmod>2014-04-02T13:30:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sqlserver/</loc>
     <lastmod>2014-04-02T13:30:29+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-11-20-step-by-steptwo-node-file-server-cluster-part-01/</loc>
     <lastmod>2013-11-20T04:33:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-09-17-msft_partitiontovolume-internal-error/</loc>
     <lastmod>2013-09-17T06:34:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/vmm2012/</loc>
+    <lastmod>2013-09-17T06:34:32+00:00</lastmod>
+  </url><url>
     <loc>/tags/rtm/</loc>
     <lastmod>2013-09-11T11:20:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-09-11-windows-8-1-server-2012-r2-rtm-now-available-on-msdn-technet/</loc>
     <lastmod>2013-09-11T11:20:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windows8/</loc>
     <lastmod>2013-09-11T11:20:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-07-30-how-to-add-a-disk-to-a-cluster/</loc>
     <lastmod>2013-07-30T04:01:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-06-27-windows-8-1-preview-is-now-available/</loc>
     <lastmod>2013-06-27T01:02:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</loc>
     <lastmod>2013-06-26T22:54:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/server2012/</loc>
-    <lastmod>2013-06-26T22:54:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/server2012r2/</loc>
     <lastmod>2013-06-26T22:54:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windows.old/</loc>
     <lastmod>2013-06-26T22:54:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/systemcenter2012r2/</loc>
     <lastmod>2013-06-25T19:03:57+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-06-25-windows-server-system-center-2012-r2-preview-now-available-for-download/</loc>
     <lastmod>2013-06-25T19:03:57+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/wssc/</loc>
     <lastmod>2013-06-25T19:03:57+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-05-22-mark-my-comments-on-outlook/</loc>
     <lastmod>2013-05-22T01:44:06+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/office/</loc>
     <lastmod>2013-05-22T01:44:06+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/outlook2013/</loc>
     <lastmod>2013-05-22T01:44:06+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/productivity/</loc>
     <lastmod>2013-05-22T01:44:06+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/backup/</loc>
     <lastmod>2013-03-18T09:36:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-03-18-backup-failednonrecoverable-io-error-occurred-operationsmanagerdw/</loc>
     <lastmod>2013-03-18T09:36:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dw/</loc>
     <lastmod>2013-03-18T09:36:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/scom/</loc>
     <lastmod>2013-03-18T09:36:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/server2012/</loc>
+    <lastmod>2013-02-19T16:21:17+00:00</lastmod>
+  </url><url>
     <loc>/posts/2013-02-19-unable-to-build-a-cluster-when-sharing-the-same-network-for-iscsi-storage/</loc>
     <lastmod>2013-02-19T16:21:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/ws2012/</loc>
+    <lastmod>2013-02-19T16:21:17+00:00</lastmod>
+  </url><url>
     <loc>/posts/2013-01-23-new-virtualization-jump-starts-register-for-hyper-v-virt-for-vmware-pros-now/</loc>
     <lastmod>2013-01-23T10:12:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vmware/</loc>
     <lastmod>2013-01-23T10:12:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/datacenter-management/</loc>
     <lastmod>2013-01-17T11:57:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sp1/</loc>
     <lastmod>2013-01-17T11:57:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-01-17-system-center-2012-sp1-general-availability/</loc>
     <lastmod>2013-01-17T11:57:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2013-01-01-whats-new-in-windows-server-2012-failover-clusteringpart-1/</loc>
     <lastmod>2013-01-01T14:16:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/release-preview/</loc>
     <lastmod>2012-06-07T23:01:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sign-in-issues/</loc>
     <lastmod>2012-06-07T23:01:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/skype/</loc>
     <lastmod>2012-06-07T23:01:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2012-06-07-unable-to-sign-in-to-skypewindows-8-release-preview/</loc>
     <lastmod>2012-06-07T23:01:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windows-8/</loc>
     <lastmod>2012-06-07T23:01:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/other/</loc>
     <lastmod>2012-06-04T18:41:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2012-06-04-presentation-timer-tool/</loc>
     <lastmod>2012-06-04T18:41:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/software/</loc>
     <lastmod>2012-06-04T18:41:16+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2012-06-01-windows-8-release-preview-windows-server-2012-release-candidate-now-available/</loc>
     <lastmod>2012-06-01T01:02:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/2012-03-02-installing-windows-server-8-beta-2/</loc>
     <lastmod>2012-03-02T23:45:52+00:00</lastmod>
   </url>
-  
 </urlset>

@@ -6,11 +6,7 @@
     <description>Recent content in Nano Server on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Apr 2016 10:26:35 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/nano-server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Apr 2016 10:26:35 +0000</lastBuildDate><atom:link href="/tags/nano-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Nano Server</title>
       <link>/posts/2016-04-12-why-nano-server/</link>

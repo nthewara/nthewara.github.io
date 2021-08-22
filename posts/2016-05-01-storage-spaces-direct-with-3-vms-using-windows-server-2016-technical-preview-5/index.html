@@ -11,9 +11,10 @@
 <meta property="og:description" content="In this blog post let’s looks at creating a Storage Spaces Direct Hyper Converged solution using three virtual machines. For production deployment, it is recommended to use physical servers instead of virtual machines. I will be using Windows Server 2016 Technical Preview 5 version which was just released few days back for this blog post.
 Before I move any further, I would like to highlight some of the key features introduced part of Windows Server 2016 Technical Preview 5" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/" />
+<meta property="og:url" content="/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-05-01T14:52:27+00:00" />
 <meta property="article:modified_time" content="2016-05-01T14:52:27+00:00" />
+
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5"/>
@@ -159,12 +160,32 @@ Before I move any further, I would like to highlight some of the key features in
 		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
-		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+		<span class="authorbox__name"></span>
 	</div>
 	<div class="authorbox__description">
 		Microsoft Cloud Solution Architect
 	</div>
 </div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nirmalt" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
@@ -181,6 +202,29 @@ Before I move any further, I would like to highlight some of the key features in
 	</div>
 </nav>
 
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nirmalt" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 			</div>
 			
@@ -189,7 +233,7 @@ Before I move any further, I would like to highlight some of the key features in
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 Nirmal Thewarathanthri.
+			&copy; 2021 Nirmal Thewarathanthri.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

@@ -6,11 +6,7 @@
     <description>Recent content in StorageSpaces on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 May 2016 14:52:27 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/storagespaces/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 01 May 2016 14:52:27 +0000</lastBuildDate><atom:link href="/tags/storagespaces/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Storage Spaces Direct with 3 VMs using Windows Server 2016 Technical Preview 5</title>
       <link>/posts/2016-05-01-storage-spaces-direct-with-3-vms-using-windows-server-2016-technical-preview-5/</link>

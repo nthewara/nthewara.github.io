@@ -11,9 +11,10 @@
 <meta property="og:description" content="In this blog post i will be discussing regarding an issue which i have faced recently on System Center Virtual Machine Manager 2012 R2. In one of my recent projects, I had to setup two VMM 2012 R2 instances to configure Azure Site Recovery, for a Datacenter Failover simulation. While installing VMM 2012 R2, I noticed that my installation failed with a WinRM issue.
 Quickly investigating this issue, I have checked my firewall settings and WinRM configuration" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/" />
+<meta property="og:url" content="/posts/2014-09-22-vmm-2012-r2-errorhardware-management-error-has-occurred-trying-to-contact-server/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2014-09-22T13:46:59+00:00" />
 <meta property="article:modified_time" content="2014-09-22T13:46:59+00:00" />
+
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="VMM 2012 R2 Error–Hardware Management error has occurred trying to contact server"/>
@@ -67,7 +68,7 @@ Quickly investigating this issue, I have checked my firewall settings and WinRM 
 <p><img src="../wp-content/uploads/2014/09/clip_image002.jpg" alt=""></p>
 <p>My initial observation was that WinRM configuration is pushed down using a Group Policy (As we can see from my screenshot above). Due to this reason IPV6 listeners were not registered within my WinRM configuration.</p>
 <p>we can check WinRM listner by using “winRM e winrm/config/listener” command</p>
-<p><strong><!-- raw HTML omitted -->Recommended Solution  – <!-- raw HTML omitted --></strong>Review Group Policy configuration and make sure that IPV6 listeners get configured as a part of the policy.</p>
+<p>**<!-- raw HTML omitted -->Recommended Solution  – <!-- raw HTML omitted -->**Review Group Policy configuration and make sure that IPV6 listeners get configured as a part of the policy.</p>
 <p><strong><!-- raw HTML omitted -->Quick Fix –<!-- raw HTML omitted --></strong>  disable IPV6 adapters and you are all good</p>
 <p><img src="../wp-content/uploads/2014/09/clip_image0025.jpg" alt=""></p>
 
@@ -91,12 +92,32 @@ Quickly investigating this issue, I have checked my firewall settings and WinRM 
 		<img alt="Nirmal Thewarathanthri avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
-		<span class="authorbox__name">About Nirmal Thewarathanthri</span>
+		<span class="authorbox__name"></span>
 	</div>
 	<div class="authorbox__description">
 		Microsoft Cloud Solution Architect
 	</div>
 </div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nirmalt" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
@@ -113,6 +134,29 @@ Quickly investigating this issue, I have checked my firewall settings and WinRM 
 	</div>
 </nav>
 
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nirmalt" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 			</div>
 			
@@ -121,7 +165,7 @@ Quickly investigating this issue, I have checked my firewall settings and WinRM 
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 Nirmal Thewarathanthri.
+			&copy; 2021 Nirmal Thewarathanthri.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

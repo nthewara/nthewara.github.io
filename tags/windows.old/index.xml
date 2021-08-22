@@ -6,11 +6,7 @@
     <description>Recent content in Windows.old on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jun 2013 22:54:39 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/windows.old/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Jun 2013 22:54:39 +0000</lastBuildDate><atom:link href="/tags/windows.old/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remove Windows.old after using in-place upgrade method on Windows Server 2012 R2 Preview</title>
       <link>/posts/2013-06-26-remove-windows-old-after-using-in-place-upgrade-method-on-windows-server-2012-r2-preview/</link>

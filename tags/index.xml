@@ -6,11 +6,7 @@
     <description>Recent content in Tags on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure IaaS</title>
       <link>/tags/azure-iaas/</link>
@@ -138,15 +134,6 @@
     </item>
     
     <item>
-      <title>sql</title>
-      <link>/tags/sql/</link>
-      <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
-      
-      <guid>/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL FCI</title>
       <link>/tags/sql-fci/</link>
       <pubDate>Sun, 19 Feb 2017 22:11:32 +0000</pubDate>
@@ -201,15 +188,6 @@
     </item>
     
     <item>
-      <title>Cloud</title>
-      <link>/tags/cloud/</link>
-      <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
-      
-      <guid>/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Cloud&amp;amp;Datacenter</title>
       <link>/tags/cloudampdatacenter/</link>
       <pubDate>Sat, 09 Jul 2016 08:59:58 +0000</pubDate>
@@ -228,15 +206,6 @@
     </item>
     
     <item>
-      <title>Server</title>
-      <link>/tags/server/</link>
-      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
-      
-      <guid>/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ServerManagement</title>
       <link>/tags/servermanagement/</link>
       <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
@@ -251,24 +220,6 @@
       <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
       
       <guid>/tags/tp5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>/tags/windows/</link>
-      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
-      
-      <guid>/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WindowsServer</title>
-      <link>/tags/windowsserver/</link>
-      <pubDate>Mon, 06 Jun 2016 05:09:58 +0000</pubDate>
-      
-      <guid>/tags/windowsserver/</guid>
       <description></description>
     </item>
     
@@ -323,6 +274,15 @@
       <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
       
       <guid>/tags/storagespacesdirect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindowsServer</title>
+      <link>/tags/windowsserver/</link>
+      <pubDate>Sun, 01 May 2016 14:52:27 +0000</pubDate>
+      
+      <guid>/tags/windowsserver/</guid>
       <description></description>
     </item>
     
@@ -570,6 +530,15 @@
     </item>
     
     <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Datacenter</title>
       <link>/tags/datacenter/</link>
       <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
@@ -579,20 +548,29 @@
     </item>
     
     <item>
+      <title>Server</title>
+      <link>/tags/server/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/tags/windows/</link>
+      <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
+      
+      <guid>/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Windows10</title>
       <link>/tags/windows10/</link>
       <pubDate>Wed, 01 Oct 2014 07:56:34 +0000</pubDate>
       
       <guid>/tags/windows10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vmm2012</title>
-      <link>/tags/vmm2012/</link>
-      <pubDate>Mon, 22 Sep 2014 13:46:59 +0000</pubDate>
-      
-      <guid>/tags/vmm2012/</guid>
       <description></description>
     </item>
     
@@ -660,15 +638,6 @@
     </item>
     
     <item>
-      <title>WS2012</title>
-      <link>/tags/ws2012/</link>
-      <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
-      
-      <guid>/tags/ws2012/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>WS2012R2</title>
       <link>/tags/ws2012r2/</link>
       <pubDate>Wed, 16 Apr 2014 06:23:54 +0000</pubDate>
@@ -705,11 +674,29 @@
     </item>
     
     <item>
+      <title>sql</title>
+      <link>/tags/sql/</link>
+      <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SQLServer</title>
       <link>/tags/sqlserver/</link>
       <pubDate>Wed, 02 Apr 2014 13:30:29 +0000</pubDate>
       
       <guid>/tags/sqlserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmm2012</title>
+      <link>/tags/vmm2012/</link>
+      <pubDate>Tue, 17 Sep 2013 06:34:32 +0000</pubDate>
+      
+      <guid>/tags/vmm2012/</guid>
       <description></description>
     </item>
     
@@ -728,15 +715,6 @@
       <pubDate>Wed, 11 Sep 2013 11:20:46 +0000</pubDate>
       
       <guid>/tags/windows8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server2012</title>
-      <link>/tags/server2012/</link>
-      <pubDate>Wed, 26 Jun 2013 22:54:39 +0000</pubDate>
-      
-      <guid>/tags/server2012/</guid>
       <description></description>
     </item>
     
@@ -818,6 +796,24 @@
       <pubDate>Mon, 18 Mar 2013 09:36:03 +0000</pubDate>
       
       <guid>/tags/scom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server2012</title>
+      <link>/tags/server2012/</link>
+      <pubDate>Tue, 19 Feb 2013 16:21:17 +0000</pubDate>
+      
+      <guid>/tags/server2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WS2012</title>
+      <link>/tags/ws2012/</link>
+      <pubDate>Tue, 19 Feb 2013 16:21:17 +0000</pubDate>
+      
+      <guid>/tags/ws2012/</guid>
       <description></description>
     </item>
     

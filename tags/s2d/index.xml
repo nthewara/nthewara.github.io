@@ -6,11 +6,7 @@
     <description>Recent content in S2D on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2017 22:11:32 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/s2d/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 19 Feb 2017 22:11:32 +0000</lastBuildDate><atom:link href="/tags/s2d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL Server 2016 Failover Cluster Instances in Azure</title>
       <link>/posts/2017-02-19-sql-server-2016-failover-cluster-instances-in-azure/</link>

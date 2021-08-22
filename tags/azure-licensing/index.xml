@@ -6,11 +6,7 @@
     <description>Recent content in Azure licensing on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/azure-licensing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Jun 2017 22:40:30 +0000</lastBuildDate><atom:link href="/tags/azure-licensing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convert existing Azure Virtual Machines to use Hybrid Use Benefit</title>
       <link>/posts/2017-06-21-convert-existing-azure-virtual-machins-to-use-hybrid-use-benefit/</link>

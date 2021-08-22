@@ -6,11 +6,7 @@
     <description>Recent content in ServerManagement on CLOUD DATACENTER &amp; DEVICE MANAGEMENT BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jun 2016 05:09:58 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/servermanagement/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 06 Jun 2016 05:09:58 +0000</lastBuildDate><atom:link href="/tags/servermanagement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows Update using Azure Server Management Tools</title>
       <link>/posts/2016-06-06-windows-update-using-azure-server-management-tools/</link>
